@@ -883,36 +883,6 @@
         margin: auto;
         position: relative;
     }
-    
-    #steps .button-border {
-        position: relative;
-        width: 270px;
-        height: 70px;
-        margin: auto;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
-        -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center;
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
-    }
-    #steps .button-border::before {
-        content: '';
-        position: absolute;
-        width: 270px;
-        height: 70px;
-        border: 5px solid var(--primary);
-        top: -10px;
-        left: -5px;
-        z-index: -1;
-    }
 
     #steps .button-solid {
         position: relative;
@@ -943,23 +913,8 @@
     #steps .button-solid::before {
         content: '';
         position: absolute;
-        width: 300px;
-        height: 40px;
-        top: 10px;
-        left: -20px;
-        background-color: white;
-        -webkit-transition: .2s ease-in-out;
-        -o-transition: .2s ease-in-out;
-        transition: .2s ease-in-out;
-        z-index: -1;
-    }
-    #steps .button-solid::after {
-        content: '';
-        position: absolute;
-        width: 240px;
-        height: 120px;
-        top: -30px;
-        left: 10px;
+        width: 93%;
+        height: 200%;
         background-color: white;
         -webkit-transition: .2s ease-in-out;
         -o-transition: .2s ease-in-out;
@@ -967,16 +922,36 @@
         z-index: -1;
     }
 
+    #steps .button-solid::after {
+        content: '';
+        position: absolute;
+        width: 200%;
+        height: 75%;
+        background-color: white;
+        -webkit-transition: .2s ease-in-out;
+        -o-transition: .2s ease-in-out;
+        transition: .2s ease-in-out;
+        z-index: -1;
+    }
+
+    #steps .button-solid span {
+        position: absolute;
+        top: -10px;
+        right: -10px;
+        bottom: -10px;
+        left: -10px;
+        border: 5px solid var(--primary);
+        z-index: -2;
+    }
+
     #steps .button-solid:hover {
         font-weight: bold;
     }
     #steps .button-solid:hover::before {
-        height: 0;
-        top: 29px;
+        width: 0%;
     }
     #steps .button-solid:hover::after {
-        width: 0;
-        left: 131px;
+        height: 0%;
     }
 
     .bottom-lines {
@@ -1135,6 +1110,7 @@
         background-color: var(--primary);
         padding-top: 100px;
         padding-bottom: 100px;
+        z-index: 1;
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -1218,37 +1194,6 @@
         color: #85c4ff;
     }
 
-    #testimonials .button-border {
-        position: relative;
-        width: 270px;
-        height: 70px;
-        margin: auto;
-        z-index: 1;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
-        -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center;
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
-    }
-    #testimonials .button-border::before {
-        content: '';
-        position: absolute;
-        width: 250px;
-        height: 70px;
-        border: 5px solid white;
-        top: -10px;
-        left: 5px;
-        z-index: -1;
-    }
-
     #testimonials .button-solid {
         position: relative;
         margin-bottom: 10px;
@@ -1280,42 +1225,46 @@
     #testimonials .button-solid::before {
         content: '';
         position: absolute;
-        width: 280px;
-        height: 40px;
-        top: 10px;
-        left: -20px;
+        width: 93%;
+        height: 200%;
         background-color: var(--primary);
         -webkit-transition: .2s ease-in-out;
         -o-transition: .2s ease-in-out;
         transition: .2s ease-in-out;
         z-index: -1;
     }
+
     #testimonials .button-solid::after {
         content: '';
         position: absolute;
-        width: 220px;
-        height: 120px;
-        top: -30px;
-        left: 10px;
+        width: 200%;
+        height: 75%;
         background-color: var(--primary);
         -webkit-transition: .2s ease-in-out;
         -o-transition: .2s ease-in-out;
         transition: .2s ease-in-out;
         z-index: -1;
+    }
+
+    #testimonials .button-solid span {
+        position: absolute;
+        top: -10px;
+        right: -10px;
+        bottom: -10px;
+        left: -10px;
+        border: 5px solid white;
+        z-index: -2;
     }
 
     #testimonials .button-solid:hover {
         font-weight: bold;
     }
     #testimonials .button-solid:hover::before {
-        height: 0;
-        top: 29px;
+        width: 0%;
     }
     #testimonials .button-solid:hover::after {
-        width: 0;
-        left: 131px;
+        height: 0%;
     }
-
 
 }
 
@@ -1528,6 +1477,8 @@
 
     #apply-now .container {
         padding: 75px 10px;
+        position: relative;
+        z-index: 1;
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -1553,37 +1504,6 @@
         display: block;
         margin: auto;
         position: relative;
-    }
-    
-    #apply-now .button-border {
-        position: relative;
-        width: 270px;
-        height: 70px;
-        margin: auto;
-        z-index: 1;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
-        -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center;
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
-    }
-    #apply-now .button-border::before {
-        content: '';
-        position: absolute;
-        width: 230px;
-        height: 70px;
-        border: 5px solid white;
-        top: -10px;
-        left: 15px;
-        z-index: -1;
     }
 
     #apply-now .button-solid {
@@ -1617,23 +1537,8 @@
     #apply-now .button-solid::before {
         content: '';
         position: absolute;
-        width: 260px;
-        height: 40px;
-        top: 10px;
-        left: -20px;
-        background-color: var(--secondary);
-        -webkit-transition: .2s ease-in-out;
-        -o-transition: .2s ease-in-out;
-        transition: .2s ease-in-out;
-        z-index: -1;
-    }
-    #apply-now .button-solid::after {
-        content: '';
-        position: absolute;
-        width: 200px;
-        height: 120px;
-        top: -30px;
-        left: 10px;
+        width: 93%;
+        height: 200%;
         background-color: var(--secondary);
         -webkit-transition: .2s ease-in-out;
         -o-transition: .2s ease-in-out;
@@ -1641,17 +1546,38 @@
         z-index: -1;
     }
 
+    #apply-now .button-solid::after {
+        content: '';
+        position: absolute;
+        width: 200%;
+        height: 75%;
+        background-color: var(--secondary);
+        -webkit-transition: .2s ease-in-out;
+        -o-transition: .2s ease-in-out;
+        transition: .2s ease-in-out;
+        z-index: -1;
+    }
+
+    #apply-now .button-solid span {
+        position: absolute;
+        top: -10px;
+        right: -10px;
+        bottom: -10px;
+        left: -10px;
+        border: 5px solid white;
+        z-index: -2;
+    }
+
     #apply-now .button-solid:hover {
         font-weight: bold;
     }
     #apply-now .button-solid:hover::before {
-        height: 0;
-        top: 29px;
+        width: 0%;
     }
     #apply-now .button-solid:hover::after {
-        width: 0;
-        left: 131px;
+        height: 0%;
     }
+
 
 
 }
@@ -1721,7 +1647,6 @@
     background: url("/images/footer-bg.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
     width: 100%;
     padding: 0;
 }
@@ -1788,10 +1713,10 @@
     display: block;
     text-decoration: none;
     margin-bottom: 15px;
-    width: 100px;
+    color: black;
 }
 .footer-nav a:hover {
-    color: var(--primary);
+    font-weight: bold;
 }
 
 .footer-nav .button-solid {
@@ -1802,6 +1727,7 @@
     line-height: 2.5rem;
     padding: 5px 10px;
     display: block;
+    color: white;
     -webkit-transition: .2s ease;
     -o-transition: .2s ease;
     transition: .2s ease;
@@ -1867,7 +1793,7 @@
     color: white;
 }
 
-.footer-bottom p span {
+.footer-bottom p a {
     color: #78CBFF;
 }
 
@@ -1892,19 +1818,26 @@
 /* Small Desktop */
 @media only screen and (min-width: 1024px) {
 
+    #footer {
+        background-position: bottom;
+    }
+
     #footer .container {
         position: relative;
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
         align-items: center;
-        justify-content: space-around;
         margin: auto;
-        padding: 0;
+        padding-top: 80px;
     }
 
     .footer-contact {
         align-self: flex-start;
+    }
+
+    .footer-nav {
+        padding: 10px 0 0 80px;
     }
 
     #footer .button {
@@ -1912,9 +1845,34 @@
         align-self: flex-start;
     }
 
+    .footer-bottom {
+        padding: 20px 0;
+    }
+
+    .footer-bottom p {
+        font-size: 0.8rem;
+    }
+
 }
 
 /* Normal Desktop */
 @media only screen and (min-width: 1300px) {
+
+    #footer .container {
+        max-width: 1400px;
+    }
+
+    .footer-nav {
+        margin-left: 100px;
+    }
+
+}
+
+/* Very Wide Desktop */
+@media only screen and (min-width: 1700px) {
+
+    #footer {
+        background-position: left;
+    }
 
 }
