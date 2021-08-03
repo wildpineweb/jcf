@@ -5,7 +5,7 @@
         height: 400px;
         background: url('/images/dump-truck.jpg');
         background-repeat: no-repeat;
-        background-position: center;
+        background-position: bottom;
         background-size: cover;
         position: relative;
         display: -webkit-box;
@@ -22,12 +22,20 @@
             -ms-flex-pack: start;
                 justify-content: flex-start;
     }
+    #hero::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: rgb(0 0 0 / 65%);
+    }
     
     #hero h1 {
         position: relative;
         text-align: center;
         font-size: 3rem;
-        width: 200px;
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -44,10 +52,10 @@
     #hero h1::before {
         content: '';
         position: absolute;
-        width: 180px;
-        height: 200px;
+        width: 100%;
+        height: 100%;
         border-left: 10px solid var(--secondary);
-        opacity: 0.75;
+        left: -25px;
         z-index: -1;
     }
     
@@ -57,17 +65,12 @@
 @media only screen and (min-width: 568px) {
 
     #hero {
-        position: relative;
         height: 600px;
     }
 
     #hero h1 {
         font-size: 4.5rem;
         margin-bottom: 0;
-    }
-    #hero h1::before {
-        width: 290px;
-        height: 240px;
     }
 
     #hero img {
@@ -84,12 +87,8 @@
 @media only screen and (min-width: 768px) {
 
     #hero {
-        height: 800px;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
+        height: 500px;
         background-attachment: fixed;
-        position: relative;
     }
 
     #hero h1 {
@@ -97,6 +96,9 @@
             -ms-transform: translateY(40px);
                 transform: translateY(40px);
         font-size: 5rem;
+    }
+    #hero h1::before {
+        left: -35px;
     }
 
     #hero img {
@@ -110,9 +112,9 @@
 
 @media only screen and (min-width: 768px) {
 
-    #hero {
+    /* #hero {
         height: 1000px;
-    }
+    } */
 
 }
 
