@@ -2,21 +2,30 @@
 <html lang="en">
 <head>
 
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-137702322-31"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-137702322-31');
+    </script>
+
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="canonical" href="">
 
     <meta name="description" content="">
     <meta name="keywords" content="">
 
     <!--Social Media Display-->
-    <meta property="og:title" content=""/>
-    <meta property="og:description" content=""/>
+    <meta property="og:title" content="" />
+    <meta property="og:description" content="" />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content=""/>
-    <meta property="og:image" content=""/>
-    <meta property="og:image:secure_url" content=""/>
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:image:secure_url" content="" />
 
     <!--Favicons-->
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -27,9 +36,9 @@
     <meta name="theme-color" content="#ffffff">
 
     <!-- CSS -->
+    <!-- Use the file path for your folder system, like /css/style.css -->
     <link rel="stylesheet" href="/css/core-styles.css">
-    <link rel="stylesheet" href="/css/style.css">
-    
+    <link rel="stylesheet" href="/css/faqs.css">
 
     <!-- jQuery -->
     <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -42,14 +51,14 @@
 </head>
 <body>
 
-    <a class="skip" aria-label="skip to main content" href="index.html#main">Click To Skip To Main</a>
+    <a class="skip" aria-label="skip to main content" href="/faqs/index.html#main">Click To Skip To Main</a>
 
     <header>
 
         <!-- Mobile Nav Strip -->
         <div class="mobile-wrapper">
             <div class="mobile-nav container mobile-nav-container">
-                <img id="mobile-logo" src="images/JoslenLOGO.png" alt="" height="60">
+                <img id="mobile-logo" src="/images/JoslenLOGO.png" alt="" height="80">
 
                 <!-- Hamburger Menu -->
                 <button aria-label="open the menu" id="menu-button" class="hamburger hamburger--spring" onclick="toggleNav()" type="button">
@@ -69,14 +78,14 @@
                 <div id="side-menu" class=" side-nav">
                     <img aria-hidden="true" src="/images/JoslenLOGO.png" alt="" height="80">
                     <ul id="on-top" class="navbar-links">
-                        <li class="nav-li"><a href="../index.html">Home</a></li>
-                        <li class="nav-li"><a href="about.html">About</a></li>
-                        <li class="nav-li"><a class="active-menu" href="html/faqs.html">FAQs</a></li>
-                        <li class="nav-li"><a href="testimonials.html">Testimonials</a></li>
-                        <li class="nav-li dealer-endorsements"><a href="dealer-endorsements.html"><span>Dealer</span> <span>Endorsements</span></a></li>
-                        <li class="nav-li"><a href="newsletters.html">Newsletters</a></li>
-                        <li class="nav-li"><a href="contact.html">Contact</a></li>
-                        <li class="nav-li"><a href="apply.html">Apply Now</a></li>
+                        <li class="nav-li"><a href="/">Home</a></li>
+                        <li class="nav-li"><a href="/about/">About</a></li>
+                        <li class="nav-li"><a class="active-menu" href="">FAQs</a></li>
+                        <li class="nav-li"><a href="/testimonials/">Testimonials</a></li>
+                        <li class="nav-li dealer-endorsements"><a href="/dealer-endorsements/"><span>Dealer</span> <span>Endorsements</span></a></li>
+                        <li class="nav-li"><a href="/newsletters/">Newsletters</a></li>
+                        <li class="nav-li"><a href="/contact/">Contact</a></li>
+                        <li class="nav-li"><a href="/apply/">Apply Now</a></li>
                     </ul>
                 </div>
             </div>
@@ -88,129 +97,107 @@
         <!-- ============================================ -->
         <!--                    LANDING                   -->
         <!-- ============================================ -->
-    
+
         <section id="hero">
+            <div aria-hidden="true"></div>
             <div class="container hero-content">
-                <div class="hero-text">
-                    <h1><span>Professional</span> Heavy Equipment Financing and Working Capital Loans for Small Businesses</h1>
-                    <a class="button-solid" href="">Request a Free Consultation</a>
-                </div>
-            </div>
-        </section>
-
-        <!-- ============================================ -->
-        <!--                  Features                    -->
-        <!-- ============================================ -->
-
-        <section id="features">
-            <div class="cards">
-                <div>
-                    <img aria-hidden="true" src="images\turnkey.svg" alt="">
-                    <h4>Turn-Key Solutions</h4>
-                    <p>At Joslen Commercial Funding, we do the heavy lifting to find you funding while you do what you do best – run your business.</p>
-                </div>
-                <div>
-                    <img aria-hidden="true" src="images\handshake.svg" alt="">
-                    <h4>Personal Service</h4>
-                    <p>Your business matters to us. We understand small businesses, care about your situation, and give one-on-one personalized service.</p>
-                </div>
-                <div>
-                    <img aria-hidden="true" src="images\credit-check.svg" alt="">
-                    <h4>All Credit Types</h4>
-                    <p>We work with credit scores of all types. Unlike most banks, we don’t just consider what’s on paper – we look at the whole picture.</p>
-                </div>
-            </div>
-            <a class="button-solid" href="">Apply Now</a>
-        </section>
-
-        <!-- ============================================ -->
-        <!--                  Solutions                   -->
-        <!-- ============================================ -->
-
-        <section id="solutions">
-            <h3>Turn-key Solutions For Your Equipment Financing and Working Capital Needs</h3>
-            <p>Obtaining funds for your small business should be easy. That’s why Joslen Commercial Funding, LLC developed turn-key solutions to get you approved for your financial needs.</p>
-            <div class="checklist">
-                <img aria-hidden="true" loading="lazy" src="images\handshake-image.jpg" alt="">
-                <ul>
-                    <li>Loans up to 250k</li>
-                    <li>Same-Day Pre-Approval</li>
-                    <li>12 - 60 Month Terms</li>
-                </ul>
-            </div>
-        </section>
-
-        <!-- ============================================ -->
-        <!--                    Steps                     -->
-        <!-- ============================================ -->
-
-        <section id="steps" class="container">
-            <h2><span class="span-1">3</span><span class="span-2">Simple Steps</span><span>to Getting Funded</span></h2>
-            <ul>
-                <li class="step-1">Complete our online credit application and authorization</li>
-                <li class="step-2">We’ll find the best funding source for your business</li>
-                <li class="step-3">Get approved and start using your funds!</li>
-            </ul>
-            <a class="button-solid" href="">Frequently Asked Questions<span aria-hidden="true"></span></a>
-            <div aria-hidden="true" class="bottom-lines"></div>
-        </section>
-
-        <!-- ============================================ -->
-        <!--                 Testimonials                 -->
-        <!-- ============================================ -->
-
-        <section id="testimonials">
-            <h2>What people are saying about Joslen Commercial Funding, LLC</h2>
-            <div class="testimonial-group">
-                <div>
-                    <p>When I first contacted Tim to purchase an over-the-road sleeper tractor, he told me about challenges that lenders often have with certain trucks. Ultimately, he encouraged me to consider a repossessed truck from a lender. Although there were some frustrations in the amount of time for repairs, I ultimately got a truck that had every issue worked on and/or repaired. Tim worked with the lender to even delay my first payment for 90 days. I will definitely be using Joslen Commercial Funding services for my next purchase.</p>
-                    <span>Daymeon Bradford</span>
-                    <span>Worldwide Web Solutions Transport, LLC</span>
-                    <span>View Park, CA</span>
-                </div>
-                <div>
-                    <p>When I first contacted Tim at JCF to purchase a skid-steer, he was concerned about lenders not thinking it was a piece of equipment that would be considered essential for my business. Not only did Tim find a lender that understood my need for it, but he used a private lending company that offered rates and terms far below norm with larger lenders. I was very happy with Tim’s service; he was a very nice and helpful guy!</p>
-                    <span>Eric Guillen</span>
-                    <span>Truck Lines, LLC</span>
-                    <span>Hancock, TX</span>
-                </div>
-            </div>
-            <a class="button-solid" href="">Read More Testimonials<span aria-hidden="true"></span></a>
-        </section>
-
-        <!-- ============================================ -->
-        <!--                    Bio                       -->
-        <!-- ============================================ -->
-
-        <section id="bio">
-            <div class="container">
-                <img loading="lazy" src="/images/headshot.jpg" alt="Tim Joslen, Joslen Commercial Funding Owner">
-                <div>
-                    <h2>About Tim</h2>
-                    <p>My name is Tim Joslen and I am the founder and owner of Joslen Commercial Funding, LLC. I have been in the insurance and financing industry for over 30 years. In 2014 I made a decision to pursue commercial financing full-time and turned my other business interests over to partners or other qualified people to run. I desired to move entirely out of the unpredictable ever-changing health insurance industry that I had spent the past 25 years working in. I have been an entrepreneur since I was very young. I believe I have the ability to help other businesses start or expand their business. With my help in obtaining financing, counsel and providing motivation, when needed, I believe I can play a part in the success of those I am fortunate enough to work with.</p>    
-                    <a href="">Read More</a>
-                </div>    
-            </div>
-        </section>
-
-        <!-- ============================================ -->
-        <!--                 Apply Now                    -->
-        <!-- ============================================ -->
-
-        <section id="apply-now">
-            <div class="container">
-                <h1>Ready to Receive Financing?</h1>
-                <a class="button-solid" href="">Apply Now<span aria-hidden="true"></span></a>
+                <h1>
+                    FAQs
+                </h1>
             </div>
         </section>
 
 
+        <section id="faqs">
+            <div class="faq-list">
+                <div>
+                    <details open>
+                        <summary title="What is Section 179 and will it save me money?">What is Section 179 and will it save me money?</summary>
+                        <p>
+                            The Section 179 tax deduction has been extended for 2017. This bill allows for a full deduction of equipment up to $500,000, which makes it advantageous to purchase new or used equipment for your business. Have your Accountant or CPA use Form 4562. More information is available at <a href="https://www.section179.org/" target="_blank">www.section179.org</a>.
+                        </p>
+                    </details>
+                </div>
+                <div>
+                    <details>
+                        <summary title="How important is good credit to qualify for financing?">How important is good credit to qualify for financing?</summary>
+                        <p>
+                            Good credit is obviously an important piece to qualifying for a loan, but is only one of many factors lenders will look at. Approval, as well as rates for a loan or lease, will be determined by time in business, homeowner or not, type of business, how many guarantors on the loan, history of like-size loans in the past, etc.
+                        </p>
+                    </details>
+                </div>
+                <div>
+                    <details>
+                        <summary title="What is an EFA?">What is an EFA?</summary>
+                        <p>
+                            An Equipment Finance Agreement is a very popular financing option. Although it works “like a lease”, it is technically not a lease. With an EFA, the borrower owns the property and it is secured by a UCC filing or a title. This means that only the equipment is the collateral versus an installment loan that can have a blanket lien on all of your business assets. There are numerous other benefits of an EFA as well.
+                        </p>
+                    </details>
+                </div>
+                <div>
+                    <details>
+                        <summary title="What is a Collateral Loan?">What is a Collateral Loan?</summary>
+                        <p>
+                            A Collateral loan is when other lien-free equipment is used as collateral to secure the new financing. Typically, a lender will want a 2:1 ratio, which means if $30,000 was desired to purchase a piece of equipment, an additional $30,000 in equipment would be needed to put up as collateral. This type of financing is often used when credit challenges exist.
+                        </p>
+                    </details>
+                </div>
+                <div>
+                    <details>
+                        <summary title="Does a Bankruptcy disqualify me?">Does a Bankruptcy disqualify me?</summary>
+                        <p>
+                            If a bankruptcy is not “discharged”, then credit will not be available. After discharge, different lenders will consider offering loans after 2 – 5 years. A significant parameter will be how much credit has been established since the bankruptcy. Non-conventional financing options do exist upon bankruptcy discharge.
+                        </p>
+                    </details>
+                </div>
+                <div>
+                    <details>
+                        <summary title="What is a soft credit pull?">What is a soft credit pull?</summary>
+                        <p>
+                            All potential lenders will do a credit check on a potential borrower, but some lenders will only do a “soft” pull. This is when public data is pulled but not through a credit agency. Some lenders feel this is an adequate amount of information to determine if a loan should be approved. The advantage for the borrower is that it does not count as an inquiry on your credit report and thus does not lower your personal credit score.
+                        </p>
+                    </details>
+                </div>
+                <div>
+                    <details>
+                        <summary title="How does a broker get paid?">How does a broker get paid?</summary>
+                        <p>
+                            Some Brokers will charge a fee up-front for their services and then get paid by the lender as well when a deal funds. Joslen Commercial Funding (JCF) will never charge any fees to you, the customer. We also pay for all shipping by giving our Federal Express account number. Once a loan has been placed and you have received your equipment, the lender will pay JCF according to that lender’s referral pay schedule.
+                        </p>
+                    </details>
+                </div>
+                <div>
+                    <details>
+                        <summary title="Can I pay off my loan early?">Can I pay off my loan early?</summary>
+                        <p>
+                            All loans, Equipment Finance Agreements, or Leases can be paid off at any time. Almost all commercial loans, however, are not simple interest loans where simple amortization is used, like a personal car loan would be. Commercial loans are generally contracts for the payments agreed upon and for the term. Most lenders will give a discount if a leasee would like to pay early for any reason. Many lenders will also let a borrower out of their current contract if they desire to upgrade their equipment and finance another piece.
+                        </p>
+                    </details>
+                </div>
+                <div>
+                    <details>
+                        <summary title="What is the definition of a 'start-up' business?">What is the definition of a 'start-up' business?</summary>
+                        <p>
+                            Almost every lender defines a “Start-up Business” as being in business for 2 years or less. There are some lenders that require 3 years. To show that timeframe, I visit the Secretary of State's website to see the date that an LLC or Corporation was formed. If someone is a sole proprietor doing business as a DBA, the lender will require a business license or tax returns from a year that would prove the length of time in business.
+                        </p>
+                    </details>
+                </div>
+                <div>
+                    <details>
+                        <summary title="How can Joslen Commercial Funding help me?">How can Joslen Commercial Funding help me?</summary>
+                        <p>
+                            Joslen Commercial Funding offers the expertise that you need in determining what type of financing is best for you. We work with most of the Nation’s top lending institutions, so after an application is processed and evaluated, our staff will determine where your best interests will be met. We work with all types of borrowers no matter what their business or credit experience is. We pride ourselves in the ability to place loans where our competitors just can’t. We also understand that your credit score is important to you, so we take every precaution to ensure that lenders are not affecting your score by running unnecessary reports. We are always your advocate in every way. Our membership in the NAELB shows our commitment to always be current on issues that could affect your bottom line.
+                        </p>
+                    </details>
+                </div>
+            </div>
+            <p>Still have questions? Give us a shout!</p>
+            <a class="button-solid" href="/contact/">CONTACT US<span aria-hidden="true"></span></a>
+        </section>
+
+ 
         
     </main>
-
-    <!-- ============================================ -->
-    <!--                     FOOTER                   -->
-    <!-- ============================================ -->
 
     <section id="footer">
         <div class="container">
@@ -225,19 +212,19 @@
                 <div class=footer-nav>
                     <h3>Navigation</h3>
                     <a href="#">Home</a>
-                    <a href="">About</a>
+                    <a href="/about/">About</a>
                     <a href="">FAQs</a>
-                    <a href="">Testimonials</a>
-                    <a href="">Dealer Endorsements</a>
-                    <a href="">Newsletters</a>
-                    <a href="">Contact</a>
-                    <a class="button-solid" href="">Apply For Financing</a>
+                    <a href="/testimonials/">Testimonials</a>
+                    <a href="/dealer-endorsements/">Dealer Endorsements</a>
+                    <a href="/newsletters/">Newsletters</a>
+                    <a href="/contact/">Contact</a>
+                    <a class="button-solid" href="/apply/">Apply For Financing</a>
                 </div>
             </div>
         </div>
         <div class="footer-bottom">
             <p>© 2021 Joslen Commercial Funding</p>
-            <p>Designed and Developed by <a href="">Wild Pine Web Designs</a></p>    
+            <p>Designed and Developed by <a href="">Wild Pine Web Designs, LLC</a></p>    
         </div>
     </section>
 

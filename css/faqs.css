@@ -1,0 +1,315 @@
+@media only screen and (min-width: 0px) {
+
+    #hero {
+        min-height: 400px;
+        height: 400px;
+        background: url('/images/flatbed.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        position: relative;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: start;
+            -ms-flex-pack: start;
+                justify-content: flex-start;
+    }
+
+    #hero h1 {
+        position: relative;
+        text-align: center;
+        font-size: 3rem;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        z-index: 50;
+        top: -100px;
+        color: white;
+    }
+    #hero h1::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        border-left: 10px solid var(--primary);
+        left: -25px;
+        z-index: -1;
+    }
+
+    #faqs {
+        max-width: 600px;
+        margin: 0 auto;
+        position: relative;
+        z-index: 1;
+    }
+
+    .faq-list {
+        width: 100%;
+        margin: 1rem auto;
+        padding: 2rem 0;
+    }
+
+    .faq-list p {
+        line-height: 1.4rem;
+    }
+
+    .faq-list > div {
+        border-bottom: 0.07rem solid #ededed;
+        padding: 1rem;
+    } 
+
+    .faq-list > div:last-child {
+        border: initial;
+    }
+
+    div + div {
+        clear: both;
+    }
+
+    details summary {
+        font-size: 1rem;
+        font-weight: bold;
+        cursor: pointer;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none; 
+        user-select: none;
+    }
+
+    details summary:hover {
+        color: var(--primary);
+        transition: all 0.3s ease;
+    }
+
+    details summary::before {
+        background: transparent;
+        border-radius: 0.3em;
+        content: "+";
+        color: var(--primary);
+        float: left;
+        font-size: 1.8rem;
+        font-weight: bold;
+        margin: -0.3rem 0.25rem 0 0;
+        padding: 0;
+        text-align: center;
+        width: 25px;
+    }
+
+    details > summary {
+        list-style: none;
+    }
+
+    details summary::-webkit-details-marker {
+        display: none;
+    }
+
+    details[open] summary ~ * {
+        animation: sweep .5s ease-in-out;
+    }
+
+    details[open] summary {
+        color: var(--primary);
+    }
+
+    details[open] p {
+        font-size: 0.85rem;
+        border-left: 2px solid var(--primary);
+        margin-top: 15px;
+        margin-left: 25px;
+        padding-left: 25px;
+        opacity: 100;
+        transition: all 3s ease;
+    }
+
+    details[open] summary::before {
+        content: "-";
+        font-size: 3.2em;
+        margin: -0.5em 0.14em 0 0;
+        font-weight: 200;
+    }
+
+    @keyframes sweep {
+        0%    {opacity: 0; margin-left: -10px}
+        100%  {opacity: 1; margin-left: 25px}
+    }
+
+    #faqs > p {
+        text-align: center;
+    }
+
+    #faqs .button-solid {
+        position: relative;
+        margin: 25px auto;
+        width: 200px;
+        font-size: 1rem;
+        line-height: 2.5rem;
+        padding: 5px 10px;
+        display: block;
+        -webkit-transition: .2s ease;
+        -o-transition: .2s ease;
+        transition: .2s ease;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+    }
+
+    #faqs .button-solid::before {
+        content: '';
+        position: absolute;
+        width: 93%;
+        height: 200%;
+        background-color: white;
+        -webkit-transition: .2s ease-in-out;
+        -o-transition: .2s ease-in-out;
+        transition: .2s ease-in-out;
+        z-index: -1;
+    }
+
+    #faqs .button-solid::after {
+        content: '';
+        position: absolute;
+        width: 125%;
+        height: 75%;
+        background-color: white;
+        -webkit-transition: .2s ease-in-out;
+        -o-transition: .2s ease-in-out;
+        transition: .2s ease-in-out;
+        z-index: -1;
+    }
+
+    #faqs .button-solid span {
+        position: absolute;
+        top: -10px;
+        right: -10px;
+        bottom: -10px;
+        left: -10px;
+        border: 5px solid var(--primary);
+        z-index: -2;
+    }
+
+    #faqs .button-solid:hover {
+        font-weight: bold;
+    }
+    #faqs .button-solid:hover::before {
+        width: 0%;
+    }
+    #faqs .button-solid:hover::after {
+        height: 0%;
+    }
+
+
+}
+
+/* Landscape */
+@media only screen and (min-width: 568px) {
+
+    #hero {
+        height: 600px;
+    }
+
+    #hero h1 {
+        font-size: 4.5rem;
+        top: -175px;
+    }
+
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px) {
+
+    summary {
+        font-size: 1.4rem;
+    }
+
+}
+
+/* Laptop */
+@media only screen and (min-width: 1024px) {
+
+    #hero {
+        height: 800px;
+    }
+
+    #hero h1 {
+        font-size: 6rem;
+        top: -195px;
+    }
+
+    #faqs {
+        box-shadow: 0px 0px 16px #5b5b5b;
+        border-radius: 0.2rem;
+        padding: 50px;
+        margin: 100px auto;
+        max-width: 800px;
+        background-color: #fff;
+    }
+
+    details summary {
+        font-size: 1.25rem;
+    }
+    
+    details[open] p {
+        font-size: 1rem;
+    }
+
+    #faqs .button-solid {
+        margin: 25px auto 10px 5px;
+    }
+
+    #faqs > p {
+        text-align: left;
+    }
+
+}
+
+/* Desktop */
+@media only screen and (min-width: 1300px) {
+
+    #hero {
+        background-position: top;
+    }
+
+    #hero h1 {
+        top: -150px;
+    }
+
+    #faqs {
+        max-width: 1000px;
+    }
+
+}
+
+/* Very Wide Desktop */
+@media only screen and (min-width: 1700px) {
+
+    #hero {
+        background-position: 0 -100px;
+    }
+
+}
