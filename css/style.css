@@ -1172,7 +1172,7 @@
     .testimonial-group div::before {
         content: '';
         position: absolute;
-        background: url("/images/leaf.svg");
+        background-image: url("/images/left-quote-white.svg");
         background-size: 100%;
         background-position: center;
         background-repeat: no-repeat;
@@ -1349,10 +1349,10 @@
             align-items: flex-start;
     }
     .testimonial-group div::before {
-        width: 80px;
-        height: 80px;
-        top: 50px;
-        left: -110px;
+        width: 60px;
+        height: 60px;
+        top: 30px;
+        left: -100px;
     }
 
     .testimonial-group p {
