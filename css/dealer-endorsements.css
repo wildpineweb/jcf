@@ -1,0 +1,300 @@
+@media only screen and (min-width: 0px) {
+
+    #hero {
+        min-height: 400px;
+        height: 400px;
+        background: url('/images/business-man.jpg');
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: cover;
+        position: relative;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: start;
+            -ms-flex-pack: start;
+                justify-content: flex-start;
+    }
+
+    #hero h1 {
+      position: relative;
+      margin-bottom: 225px;
+      max-width: 250px;
+    }
+
+    #hero h1::before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border-left: 10px solid var(--primary);
+      left: -25px;
+    }
+
+    #testimonials {
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .test-wrapper {
+      max-width: 1000px;
+      margin: auto;
+      display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: start;
+            -ms-flex-pack: start;
+                justify-content: flex-start;
+    }
+
+    .test-col {
+      margin: 0 10px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: start;
+          -ms-flex-pack: start;
+              justify-content: flex-start;
+    }
+
+    .test-col div {
+      position: relative;
+      background-color: #f5f5f5;
+      border-radius: 5px;
+      padding: 60px 20px 20px;
+      margin: 25px auto;
+    }
+
+    .blue-quote {
+      border-top: 3px solid var(--secondary);
+    }
+    .blue-quote::before {
+      content: '';
+      position: absolute;
+      display: block;
+      background-image: url('/images/left-quote-blue.svg');
+      background-repeat: no-repeat;
+      background-size: 100%;
+      width: 30px;
+      height: 30px;
+      top: 15px;
+      left: 15px;
+    }
+
+    .red-quote {
+      border-top: 3px solid var(--primary);
+    }
+    .red-quote::before {
+      content: '';
+      position: absolute;
+      display: block;
+      background-image: url('/images/left-quote-red.svg');
+      background-repeat: no-repeat;
+      background-size: 100%;
+      width: 30px;
+      height: 30px;
+      top: 15px;
+      left: 15px;
+    }
+
+    .test-col p {
+      display: block;
+      position: relative;
+      font-size: 0.8rem;
+    }
+
+    .test-col span {
+      display: block;
+      font-weight: bold;
+      padding: 15px 0 5px;
+    }
+
+    .test-col p:last-child {
+      font-size: 0.7rem;
+    }
+
+/* Apply Today Button */
+
+    #testimonials .button-solid {
+      position: relative;
+      margin: 50px auto;
+      width: 200px;
+      font-size: 1rem;
+      line-height: 2.5rem;
+      padding: 5px 10px;
+      display: block;
+      background-color: var(--secondary);
+      -webkit-transition: .2s ease;
+      -o-transition: .2s ease;
+      transition: .2s ease;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+  }
+
+  #testimonials .button-solid::before {
+      content: '';
+      position: absolute;
+      width: 93%;
+      height: 200%;
+      background-color: white;
+      -webkit-transition: .2s ease-in-out;
+      -o-transition: .2s ease-in-out;
+      transition: .2s ease-in-out;
+      z-index: -1;
+  }
+
+  #testimonials .button-solid::after {
+      content: '';
+      position: absolute;
+      width: 200%;
+      height: 75%;
+      background-color: white;
+      -webkit-transition: .2s ease-in-out;
+      -o-transition: .2s ease-in-out;
+      transition: .2s ease-in-out;
+      z-index: -1;
+  }
+
+  #testimonials .button-solid span {
+      position: absolute;
+      top: -10px;
+      right: -10px;
+      bottom: -10px;
+      left: -10px;
+      border: 5px solid var(--secondary);
+      z-index: -2;
+  }
+
+  #testimonials .button-solid:hover {
+      font-weight: bold;
+  }
+  #testimonials .button-solid:hover::before {
+      width: 0%;
+  }
+  #testimonials .button-solid:hover::after {
+      height: 0%;
+  }
+
+
+}
+
+@media only screen and (min-width: 568px) {
+
+  #hero h1 {
+    margin-right: 225px;
+    font-size: 2.25rem;
+  }
+
+}
+
+@media only screen and (min-width: 768px) {
+
+  #hero h1 {
+    margin-right: 300px;
+  }
+
+  .test-wrapper {
+      -webkit-box-orient: horizontal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: flex-start;
+      -webkit-box-pack: start;
+          -ms-flex-pack: start;
+              justify-content: space-evenly;
+  }
+
+  .test-col {
+    width: 33.3333%;
+  }
+
+}
+
+@media only screen and (min-width: 1024px) {
+
+  #hero {
+    height: 550px;
+  }
+
+  #hero h1 {
+    margin-bottom: 125px;
+    margin-right: 500px;
+    font-size: 3rem;
+  }
+
+  .test-col p {
+    font-size: 1rem;
+  }
+
+  .test-col span {
+    padding: 15px 0 5px;
+  }
+
+  .test-col p:last-child {
+    font-size: 0.85rem;
+  }
+
+  #testimonials .button-solid {
+    margin: 50px auto 50px 150px;
+  }
+
+}
+
+@media only screen and (min-width: 1300px) {
+
+  #testimonials {
+    max-width: 1200px;
+  }
+
+  .test-wrapper {
+    max-width: 1200px;
+  }
+
+  .test-col {
+    margin: 0 15px;
+  }
+
+}
+
+@media only screen and (min-width: 1500px) {
+
+  #hero h1 {
+    margin-bottom: 50px;
+    margin-right: 700px;
+    font-size: 4rem;
+  }
+
+}
