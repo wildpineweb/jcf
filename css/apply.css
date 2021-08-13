@@ -10,7 +10,15 @@
         position: relative;
     }
 
-    #newsletters {
+    #hero h1 {
+        font-size: 2rem;
+        width: 235px;
+        margin: 0 10px 0 auto;
+        color: white;
+        letter-spacing: 3px;
+    }
+
+    #contact {
         max-width: 600px;
         margin: auto;
         display: -webkit-box;
@@ -29,7 +37,6 @@
     }
 
     .card {
-        position: relative;
         background-color: #f5f5f5;
         padding: 20px 20px 50px;
         margin-top: 20px;
@@ -43,7 +50,7 @@
         content: '';
         position: absolute;
         border-top: 3px solid var(--secondary);
-        width: 150px;
+        width: 120px;
         top: -10px;
         left: -10px;
     }
@@ -51,77 +58,48 @@
         content: '';
         position: absolute;
         border-top: 3px solid var(--secondary);
-        width: 150px;
+        width: 120px;
         bottom: -10px;
         left: -10px;
     }
 
     /* Left Column */
 
-    .img-header {
-        background-image: url("/images/JCF-header.png");
-        background-repeat: no-repeat;
-        background-size: 100%;
-        max-width: 300px;
-        height: 100px;
-    }
-  
-    .news-content {
-        position: relative;
-    }   
-
-    .left-col div {
-        margin-bottom: 35px;
-    }
-
     .left-col h1 {
         color: var(--primary);
         font-size: 2rem;
     }
 
-    .left-col p {
-        margin-bottom: 20px;
+    .contact-info {
+        position: relative;
+        margin: 50px 40px;
+    }
+    .contact-info::before {
+        content: '';
+        position: absolute;
+        border-left: 3px solid var(--secondary);
+        height: 100%;
+        bottom: 0;
+        left: -30px;
     }
 
-    .left-col h2 {
-        color: var(--primary);
-        margin-bottom: 15px;
+    .contact-info p {
+        font-size: 1.25rem;
+        padding: 5px 0;
     }
 
-    .left-col a {
+    .contact-info p a {
+        font-size: 1rem;
         text-decoration: none;
         color: var(--primary);
         font-weight: bold;
     }
 
-    .news-content {
-        position: relative;
-        margin-bottom: 80px !important;
-    }
-    .news-content::after {
-        content: '';
-        position: absolute;
-        border-bottom: 4px solid var(--secondary);
-        width: 100%;
-        bottom: -40px;
-        left: 0;
+    .contact-info span {
+        display: block;
     }
 
     /* Right Column */
-
-    .right-col a {
-        display: block;
-        text-decoration: none;
-        color: var(--primary);
-        font-weight: bold;
-        max-width: 180px;
-        margin: 50px auto;
-        line-height: 1.8rem;
-    }
-
-    .right-col a:hover {
-        color: var(--secondary);
-    }
 
     /* FORM */
 
@@ -133,6 +111,27 @@
         -webkit-box-direction: normal;
             -ms-flex-direction: column;
                 flex-direction: column;
+        -webkit-box-align: stretch;
+            -ms-flex-align: stretch;
+                align-items: stretch;
+        -webkit-box-pack: start;
+            -ms-flex-pack: start;
+                justify-content: flex-start;
+    }
+
+    .signup {
+        background-color: #f5f5f5;
+    }
+
+    .text-fields {
+        margin: 5px 0;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
         -webkit-box-align: start;
             -ms-flex-align: start;
                 align-items: flex-start;
@@ -141,17 +140,60 @@
                 justify-content: flex-start;
     }
 
-    .signup {
-        background-color: var(--primary);
+    .text-fields div {
+        margin-right: 15px;
     }
 
-    .signup h3 {
-        color: white;
+    .double div {
+        width: 50%;
+    }
+
+    .single div {
+        width: 100%;
+    }
+
+    .required::after {
+        content: '*';
+        color: #790000;
+        margin-left: 5px;
+    }
+
+    .bottom-label-input {
+        margin-bottom: 0;
+    }
+
+    .bottom-label {
+        font-size: 0.75rem;
     }
 
     input {
         padding: 10px 20px 10px 5px;
+        margin: 10px 0 15px;
+        font-size: 0.75rem;
+        width: 100%;
+    }
+
+    .radio-type {
+        padding: 0;
         margin: 10px 0;
+        font-size: 1rem;
+        width: auto;
+    }
+
+    select {
+        padding: 10px 10px 10px 0;
+        margin: 10px 0;
+    }
+
+    option {
+        font-size: 0.75rem;
+    }
+
+    textarea {
+        margin: 10px 0 15px;
+        font-size: 0.75rem;
+        width: 100%;
+        height: 75px;
     }
 
     .form-submit  {
@@ -169,13 +211,16 @@
 
 @media only screen and (min-width: 568px) {
 
-
+    #hero h1 {
+        font-size: 3rem;
+        width: 340px;
+    }
 
 }
 
 @media only screen and (min-width: 768px) {
 
-    #newsletters {
+    #contact {
         max-width: 1000px;
         -webkit-box-orient: horizontal;
             -ms-flex-direction: row;
@@ -189,18 +234,23 @@
     }
 
     .left-col {
-        max-width: 600px;
+        max-width: 300px;
     }
 
     .right-col {
-        max-width: 300px;;
+        width: 600px;;
     }
 
 }
 
 @media only screen and (min-width: 768px) {
 
-    #newsletters {
+    #hero h1 {
+        font-size: 4rem;
+        width: 440px;
+    }
+
+    #contact {
         max-width: 1200px;
     }
 
@@ -212,12 +262,18 @@
         height: 600px;
     }
 
-    .right-col a {
-        max-width: none;
+    #hero h1 {
+        margin: 100px 10px 0 auto;
     }
 
 }
 
 @media only screen and (min-width: 1300px) {
+
+    #hero h1 {
+        font-size: 5rem;
+        width: 540px;
+        margin: 100px -100px 0 auto;
+    }
 
 }

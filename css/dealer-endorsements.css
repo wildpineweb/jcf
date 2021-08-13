@@ -26,7 +26,8 @@
     #hero h1 {
       position: relative;
       margin-bottom: 225px;
-      max-width: 250px;
+      margin-right: 100px;
+      max-width: 150px;
     }
 
     #hero h1::before {

@@ -92,6 +92,10 @@
         font-weight: bold;
         padding: 20px;
     }
+
+    .left-col h1 a {
+        padding: 0;
+    }
     
     .left-col h1 {
         color: var(--primary);
