@@ -57,7 +57,7 @@ var $isActiveHamburger = $(".hamburger.is-active .hamburger-inner::after");
 var $hamburgerInner = $(".hamburger-inner");
 var $mobileNav = $(".mobile-nav");
 
-/* SSN automated dashes in Application Form */
+/* Applicant SSN automated dashes in Application Form */
 const ssn = document.getElementById('ssn');
 
 ssn.addEventListener("keydown", (e) => {
@@ -67,6 +67,19 @@ ssn.addEventListener("keydown", (e) => {
     }
     if(e.target.value.length === 6) {
         ssn.value = ssn.value + "-";
+    }
+});
+
+/* Co-Applicant SSN automated dashes in Application Form */
+const coSSN = document.getElementById('co-ssn');
+
+coSSN.addEventListener("keydown", (e) => {
+    if(e.key === "Backspace" || e.key === "Delete") return;
+    if(e.target.value.length === 3) {
+        coSSN.value = coSSN.value + "-";
+    }
+    if(e.target.value.length === 6) {
+        coSSN.value = coSSN.value + "-";
     }
 });
 
