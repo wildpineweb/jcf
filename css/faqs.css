@@ -252,13 +252,10 @@
 /* Laptop */
 @media only screen and (min-width: 1024px) {
 
-    #hero {
-        height: 800px;
-    }
-
     #hero h1 {
         font-size: 6rem;
-        top: -195px;
+        top: -115px;
+        left: -270px;
     }
 
     #faqs {
@@ -291,25 +288,8 @@
 /* Desktop */
 @media only screen and (min-width: 1300px) {
 
-    #hero {
-        background-position: top;
-    }
-
-    #hero h1 {
-        top: -150px;
-    }
-
     #faqs {
         max-width: 1000px;
-    }
-
-}
-
-/* Very Wide Desktop */
-@media only screen and (min-width: 1700px) {
-
-    #hero {
-        background-position: 0 -100px;
     }
 
 }
