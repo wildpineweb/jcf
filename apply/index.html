@@ -125,7 +125,10 @@
             </div>
             <div class="right-col">
                 <div class="card signup">
-                    <form id="signup-form" name="Application Form" method="post" data-netlify="true">
+                    <form id="signup-form" name="Newsletter Sign-Up Form" method="post" netlify-honeypot="bot-field" data-netlify="true">
+                        <p class="hidden">
+                            <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
+                        </p>
                         <h2>Business Information</h2>
                         <div class="text-fields double">
                             <div>

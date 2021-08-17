@@ -152,7 +152,10 @@
             <div class="right-col">
                 <div class="card signup">
                     <h3>Sign Up for JCF's Monthly Newsletter</h3>
-                    <form id="signup-form" name="Newsletter Sign-Up Form" method="post" data-netlify="true">
+                    <form id="signup-form" name="Newsletter Sign-Up Form" method="post" netlify-honeypot="bot-field" data-netlify="true">
+                        <p class="hidden">
+                            <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
+                        </p>
                         <input aria-label="first name" class="input1" name="first name" placeholder="First Name" type="text" tabindex="1" required>
                         <input aria-label="last name" class="input1" name="last name" placeholder="Last Name" type="text" tabindex="2" required>
                         <input aria-label="email" class="input1 right" name="email" placeholder="Email Address" type="email" tabindex="3" required>
