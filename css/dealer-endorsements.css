@@ -25,9 +25,9 @@
 
     #hero h1 {
       position: relative;
-      margin-bottom: 225px;
-      margin-right: 100px;
       max-width: 150px;
+      top: -100px;
+      left: -40px;
     }
 
     #hero h1::before {
@@ -211,11 +211,21 @@
 
 }
 
+@media only screen and (min-width: 400px) {
+
+  #hero h1 {
+    font-size: 2rem;
+    top: -120px;
+    left: -90px;
+  }
+
+}
+
 @media only screen and (min-width: 568px) {
 
   #hero h1 {
-    margin-right: 225px;
-    font-size: 2.25rem;
+    top: -20px;
+    left: -170px;
   }
 
 }
@@ -223,7 +233,8 @@
 @media only screen and (min-width: 768px) {
 
   #hero h1 {
-    margin-right: 300px;
+    font-size: 3rem;
+    left: -260px;
   }
 
   .test-wrapper {
@@ -251,9 +262,8 @@
   }
 
   #hero h1 {
-    margin-bottom: 125px;
-    margin-right: 500px;
-    font-size: 3rem;
+    font-size: 4rem;
+    left: -390px;
   }
 
   .test-col p {
@@ -286,16 +296,6 @@
 
   .test-col {
     margin: 0 15px;
-  }
-
-}
-
-@media only screen and (min-width: 1500px) {
-
-  #hero h1 {
-    margin-bottom: 50px;
-    margin-right: 700px;
-    font-size: 4rem;
   }
 
 }

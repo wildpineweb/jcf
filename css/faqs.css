@@ -26,7 +26,7 @@
     #hero h1 {
         position: relative;
         text-align: center;
-        font-size: 3rem;
+        font-size: 4.5rem;
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -155,7 +155,7 @@
 
     #faqs .button-solid {
         position: relative;
-        margin: 25px auto;
+        margin: 40px auto 25px;
         width: 200px;
         font-size: 1rem;
         line-height: 2.5rem;
@@ -234,7 +234,7 @@
     }
 
     #hero h1 {
-        font-size: 4.5rem;
+        font-size: 6rem;
         top: -175px;
     }
 
@@ -247,14 +247,22 @@
         font-size: 1.4rem;
     }
 
+    #hero h1 {
+        left: -150px;
+    }
+
 }
 
 /* Laptop */
 @media only screen and (min-width: 1024px) {
 
+    #hero {
+        background-position: top left;
+    }
+
     #hero h1 {
-        font-size: 6rem;
-        top: -115px;
+        font-size: 7rem;
+        top: -100px;
         left: -270px;
     }
 
@@ -276,7 +284,7 @@
     }
 
     #faqs .button-solid {
-        margin: 25px auto 10px 5px;
+        margin: 40px auto 10px 5px;
     }
 
     #faqs > p {
@@ -288,8 +296,36 @@
 /* Desktop */
 @media only screen and (min-width: 1300px) {
 
+    #hero {
+        background-position: 0 -100px;
+    }
+
     #faqs {
         max-width: 1000px;
+    }
+
+}
+
+@media only screen and (min-width: 1500px) {
+
+    #hero {
+        background-position: 0 -150px;
+    }
+
+}
+
+@media only screen and (min-width: 1650px) {
+
+    #hero {
+        background-position: 0 -200px;
+    }
+
+}
+
+@media only screen and (min-width: 1750px) {
+
+    #hero {
+        background-position: 0 -250px;
     }
 
 }

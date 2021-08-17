@@ -740,6 +740,11 @@
 }
 
 
+/* Hide Honeypot Field in Forms */
+.hidden {
+	display: none;
+}
+
 
 /*-- -------------------------- -->
 <---           Footer            -->
@@ -785,15 +790,15 @@
 }
 
 .footer-contact p {
-    font-size: .8rem;
-    padding: 10px 40px;
+    padding: 10px 20px;
+	line-height: 1.5rem;
     font-weight: bold;
     max-width: 400px;
     text-align: center;
 }
 
 .footer-contact a {
-    font-size: .8rem;
+    font-size: .9rem;
     font-weight: bold;
     padding-bottom: 25px;
 }
@@ -807,7 +812,7 @@
 }
 
 .footer-nav h3 {
-    font-size: 2em;
+    font-size: 2.5rem;
     color: var(--primary);
     text-align: left;
     padding-bottom: 20px;
@@ -816,16 +821,19 @@
 .footer-nav a {
     display: block;
     text-decoration: none;
-    margin-bottom: 15px;
+	font-size: 1.2rem;
+    margin-bottom: 25px;
+	max-width: 250px;
     color: black;
 }
 .footer-nav a:hover {
+	color: var(--primary);
     font-weight: bold;
 }
 
 .footer-nav .button-solid {
     position: relative;
-    margin: 40px 0;
+    margin: 50px 0;
     width: 220px;
     font-size: 1rem;
     line-height: 2.5rem;
