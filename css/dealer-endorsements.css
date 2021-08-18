@@ -62,6 +62,13 @@
                 justify-content: flex-start;
     }
 
+    .test-wrapper a {
+      display: block;
+      text-decoration: none;
+      color: var(--primary);
+      margin-top: 5px;
+    }
+
     .test-col {
       margin: 0 10px;
       display: -webkit-box;
@@ -276,10 +283,6 @@
 
   .test-col p:last-child {
     font-size: 0.85rem;
-  }
-
-  #testimonials .button-solid {
-    margin: 50px auto 50px 150px;
   }
 
 }
