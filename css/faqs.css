@@ -119,6 +119,13 @@
         display: none;
     }
 
+    details p span {
+        display: block;
+        font-size: 1rem;
+        font-weight: bold;
+        padding: 10px 0 5px;
+    }
+
     details[open] summary ~ * {
         animation: sweep .5s ease-in-out;
     }
@@ -133,6 +140,15 @@
         margin-top: 15px;
         margin-left: 25px;
         padding-left: 25px;
+        opacity: 100;
+        transition: all 3s ease;
+    }
+
+    details[open] ul {
+        font-size: 0.85rem;
+        border-left: 2px solid var(--primary);
+        margin-top: 15px;
+        margin-left: 25px;
         opacity: 100;
         transition: all 3s ease;
     }
@@ -280,6 +296,10 @@
     }
     
     details[open] p {
+        font-size: 1rem;
+    }
+
+    details[open] ul {
         font-size: 1rem;
     }
 
