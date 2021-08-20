@@ -577,7 +577,7 @@
 
     .checklist img {
         width: 250px;
-        height: 200px;
+        height: 225px;
         border-radius: 5px;
         -webkit-box-shadow: 2px 2px 13px 6px rgba(22, 52, 71, .25);
         box-shadow: 2px 2px 13px 6px rgba(22, 52, 71, .25);
@@ -585,7 +585,7 @@
 
     .checklist ul {
         width: 250px;
-        height: 200px;
+        height: 250px;
         list-style: none;
         background: var(--primary);
         border-radius: 5px;
@@ -624,6 +624,14 @@
         height: 30px;
         top: 15px;
         left: -40px;
+    }
+
+    .checklist ul span {
+        color: white;
+        font-size: 0.5rem;
+        margin-left: -25px;
+        margin-right: 10px;
+        line-height: 1rem;
     }
 
     #solutions::after {
@@ -669,6 +677,10 @@
         height: 50px;
         top: 9px;
         left: -62px;
+    }
+
+    .checklist ul span {
+        font-size: 0.75rem;
     }
 
     #solutions::after {
