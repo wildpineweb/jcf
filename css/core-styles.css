@@ -753,7 +753,7 @@
 #footer {
     position: relative;
     z-index: 1;
-    background: url("/images/footer-bg.jpg");
+    background: url("/images/footer-bg-1024.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
@@ -931,8 +931,11 @@
 @media only screen and (min-width: 1024px) {
 
     #footer {
+		background: url("/images/footer-bg-1920.jpg");
+		background-size: cover;
+		background-repeat: no-repeat;	
         background-position: bottom;
-    }
+	}
 
     #footer .container {
         position: relative;

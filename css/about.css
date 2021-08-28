@@ -3,7 +3,7 @@
     #hero {
         min-height: 400px;
         height: 400px;
-        background: url('/images/semi-truck-1.jpg');
+        background: url('/images/semi-truck-1024.jpg');
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -92,6 +92,13 @@
 }
 
 @media only screen and (min-width: 1024px) {
+
+    #hero {
+        background: url('/images/semi-truck-1920.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
 
     #hero h1 {
         left: -250px;

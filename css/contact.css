@@ -3,7 +3,7 @@
     #hero {
         min-height: 400px;
         height: 400px;
-        background: url('/images/lady-on-phone-flipped.jpg');
+        background: url('/images/lady-on-phone-1024.jpg');
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -12,11 +12,13 @@
 
     #hero h1 {
         position: relative;
-        font-size: 2rem;
-        width: 235px;
-        margin: 50px 10px 0 auto;
+        font-size: 1.5rem;
+        width: 160px;
+        left: 110px;
+        top: 90px;
         color: white;
         letter-spacing: 3px;
+        margin: auto;
     }
     #hero h1::before {
         content: '';
@@ -172,16 +174,23 @@
 @media only screen and (min-width: 568px) {
 
     #hero h1 {
-        font-size: 3rem;
-        width: 340px;
+        font-size: 2.75rem;
+        width: 290px;
+        left: 140px;
     }
 
 }
 
 @media only screen and (min-width: 768px) {
 
+    #hero h1 {
+        font-size: 3.5rem;
+        width: 360px;
+        left: 200px;
+    }
+
     #contact {
-        max-width: 1000px;
+        max-width: 1200px;
         -webkit-box-orient: horizontal;
             -ms-flex-direction: row;
                 flex-direction: row;
@@ -203,27 +212,20 @@
 
 }
 
-@media only screen and (min-width: 768px) {
-
-    #hero h1 {
-        font-size: 4rem;
-        width: 440px;
-    }
-
-    #contact {
-        max-width: 1200px;
-    }
-
-}
-
 @media only screen and (min-width: 1024px) {
 
     #hero {
         height: 600px;
+        background: url('/images/lady-on-phone-1920.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
     }
 
     #hero h1 {
-        margin: 100px 10px 0 auto;
+        font-size: 4rem;
+        width: 400px;
+        left: 250px;
     }
 
 }
@@ -232,8 +234,8 @@
 
     #hero h1 {
         font-size: 5rem;
-        width: 540px;
-        margin: 100px -100px 0 auto;
+        width: 490px;
+        left: 330px;
     }
 
 }

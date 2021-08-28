@@ -3,7 +3,7 @@
     #hero {
         min-height: 400px;
         height: 400px;
-        background: url('/images/handshake-image.jpg');
+        background: url('/images/handshake-image-1024.jpg');
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -193,9 +193,9 @@
         -webkit-box-direction: normal;
             -ms-flex-direction: column;
                 flex-direction: column;
-        -webkit-box-align: end;
-            -ms-flex-align: end;
-                align-items: flex-end;
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: flex-start;
         -webkit-box-pack: start;
             -ms-flex-pack: start;
                 justify-content: flex-start;
@@ -277,6 +277,10 @@
         -webkit-box-orient: horizontal;
             -ms-flex-direction: row;
                 flex-direction: row;
+        -webkit-box-align: end;
+            -ms-flex-align: end;
+            align-items: flex-end;
+    
     }
 
     .double div {
@@ -317,6 +321,13 @@
 
 @media only screen and (min-width: 1024px) {
 
+    #hero {
+        background: url('/images/handshake-image-1920.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    
 }
 
 @media only screen and (min-width: 1300px) {

@@ -3,7 +3,7 @@
     #hero {
         min-height: 400px;
         height: 400px;
-        background: url('/images/flatbed.jpg');
+        background: url('/images/flatbed-1024.jpg');
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -273,7 +273,10 @@
 @media only screen and (min-width: 1024px) {
 
     #hero {
+        background: url('/images/flatbed-1920.jpg');
+        background-repeat: no-repeat;
         background-position: top left;
+        background-size: cover;
     }
 
     #hero h1 {

@@ -3,7 +3,7 @@
     #hero {
         min-height: 400px;
         height: 400px;
-        background: url('/images/guy-on-phone.jpg');
+        background: url('/images/guy-on-phone-1024.jpg');
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -27,6 +27,7 @@
     #hero h1 {
         position: relative;
         color: white;
+        font-size: 2rem;
         letter-spacing: 2px;
         top: -50px;
         right: -20px;
@@ -189,6 +190,7 @@
     #hero h1 {
         font-size: 3rem;
         width: 340px;
+        right: -100px;
     }
 
 }
@@ -235,10 +237,14 @@
 
     #hero {
         height: 600px;
+        background: url('/images/guy-on-phone-1920.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
     }
 
     #hero h1 {
-        margin: 100px 10px 0 auto;
+        right: -250px;
     }
 
 }

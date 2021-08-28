@@ -3,7 +3,7 @@
     #hero {
         min-height: 400px;
         height: 400px;
-        background: url('/images/dump-truck-and-excavator.jpg');
+        background: url('/images/dump-truck-and-excavator-1024.jpg');
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -257,6 +257,10 @@
 
   #hero {
     height: 550px;
+    background: url('/images/dump-truck-and-excavator-1920.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
   }
 
   #hero h1 {

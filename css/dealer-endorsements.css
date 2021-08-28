@@ -3,7 +3,7 @@
     #hero {
         min-height: 400px;
         height: 400px;
-        background: url('/images/business-man.jpg');
+        background: url('/images/business-man-1024.jpg');
         background-repeat: no-repeat;
         background-position: top;
         background-size: cover;
@@ -266,6 +266,10 @@
 
   #hero {
     height: 550px;
+    background: url('/images/business-man-1920.jpg');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
   }
 
   #hero h1 {
