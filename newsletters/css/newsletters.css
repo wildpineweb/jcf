@@ -3,7 +3,7 @@
     #hero {
         min-height: 400px;
         height: 400px;
-        background: url('/images/guy-on-phone.jpg');
+        background: url('/images/guy-on-phone-1024.jpg');
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -165,6 +165,12 @@
         font-weight: bold;
     }
 
+    .quote {
+        margin-left: 40px;
+        margin-right: 40px;
+        font-style: italic;
+    }
+
 }
 
 @media only screen and (min-width: 568px) {
@@ -210,6 +216,11 @@
 
     #hero {
         height: 600px;
+        background: url('/images/guy-on-phone-1920.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
     }
 
     .right-col a {
