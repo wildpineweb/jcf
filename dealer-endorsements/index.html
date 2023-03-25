@@ -1,23 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-
+  <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7Q3CBSF1SW"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-7Q3CBSF1SW"
+    ></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-        gtag('config', 'G-7Q3CBSF1SW');
+      gtag("config", "G-7Q3CBSF1SW");
     </script>
 
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <meta name="description" content="">
-    <meta name="keywords" content="">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
 
     <!--Social Media Display-->
     <meta property="og:title" content="" />
@@ -28,176 +31,268 @@
     <meta property="og:image:secure_url" content="" />
 
     <!--Favicons-->
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
 
     <!-- CSS -->
     <!-- Use the file path for your folder system, like /css/style.css -->
-    <link rel="stylesheet" href="/css/core-styles.css">
-    <link rel="stylesheet" href="/css/dealer-endorsements.css">
+    <link rel="stylesheet" href="/css/core-styles.css" />
+    <link rel="stylesheet" href="/css/dealer-endorsements.css" />
 
     <!-- jQuery -->
-    <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script
+      defer
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+    ></script>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap"
+      rel="stylesheet"
+    />
 
     <title>Dealer Endorsements | Joslen Commercial Funding, LLC</title>
-</head>
-<body>
-
-    <a class="skip" aria-label="skip to main content" href="/dealer-endorsements/index.html#main">Click To Skip To Main</a>
+  </head>
+  <body>
+    <a
+      class="skip"
+      aria-label="skip to main content"
+      href="/dealer-endorsements/index.html#main"
+      >Click To Skip To Main</a
+    >
 
     <header>
+      <!-- Mobile Nav Strip -->
+      <div class="mobile-wrapper">
+        <div class="mobile-nav container mobile-nav-container">
+          <img
+            id="mobile-logo"
+            src="/images/JoslenLOGO.png"
+            alt=""
+            height="80"
+          />
 
-        <!-- Mobile Nav Strip -->
-        <div class="mobile-wrapper">
-            <div class="mobile-nav container mobile-nav-container">
-                <img id="mobile-logo" src="/images/JoslenLOGO.png" alt="" height="80">
-
-                <!-- Hamburger Menu -->
-                <button aria-label="open the menu" id="menu-button" class="hamburger hamburger--spring" onclick="toggleNav()" type="button">
-                    <span aria-hidden="true" class="hamburger-box">
-                        <span aria-hidden="true" class="hamburger-inner"></span>
-                    </span>
-                </button>
-            </div>
+          <!-- Hamburger Menu -->
+          <button
+            aria-label="open the menu"
+            id="menu-button"
+            class="hamburger hamburger--spring"
+            onclick="toggleNav()"
+            type="button"
+          >
+            <span aria-hidden="true" class="hamburger-box">
+              <span aria-hidden="true" class="hamburger-inner"></span>
+            </span>
+          </button>
         </div>
+      </div>
 
-        <!-- ============================================ -->
-        <!--                   NAVIGATION                 -->
-        <!-- ============================================ -->
+      <!-- ============================================ -->
+      <!--                   NAVIGATION                 -->
+      <!-- ============================================ -->
 
-        <nav>
-            <div class="navbar-menu">
-                <div id="side-menu" class=" side-nav">
-                    <img aria-hidden="true" src="/images/JoslenLOGO.png" alt="" height="80">
-                    <ul id="on-top" class="navbar-links">
-                        <li class="nav-li"><a href="/">Home</a></li>
-                        <li class="nav-li"><a href="/about/">About</a></li>
-                        <li class="nav-li"><a href="/faqs/">FAQs</a></li>
-                        <li class="nav-li"><a href="/testimonials/">Testimonials</a></li>
-                        <li class="nav-li dealer-endorsements"><a class="active-menu" href=""><span>Dealer</span> <span>Endorsements</span></a></li>
-                        <li class="nav-li"><a href="/newsletters/">Newsletters</a></li>
-                        <li class="nav-li"><a href="/contact/">Contact</a></li>
-                        <li class="nav-li"><a href="/apply/">Apply Now</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+      <nav>
+        <div class="navbar-menu">
+          <div id="side-menu" class="side-nav">
+            <img
+              aria-hidden="true"
+              src="/images/JoslenLOGO.png"
+              alt=""
+              height="80"
+            />
+            <ul id="on-top" class="navbar-links">
+              <li class="nav-li"><a href="/">Home</a></li>
+              <li class="nav-li"><a href="/about/">About</a></li>
+              <li class="nav-li"><a href="/faqs/">FAQs</a></li>
+              <li class="nav-li"><a href="/testimonials/">Testimonials</a></li>
+              <li class="nav-li dealer-endorsements">
+                <a class="active-menu" href=""
+                  ><span>Dealer</span> <span>Endorsements</span></a
+                >
+              </li>
+              <li class="nav-li"><a href="/newsletters/">Newsletters</a></li>
+              <li class="nav-li"><a href="/contact/">Contact</a></li>
+              <li class="nav-li"><a href="/apply/">Apply Now</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
-        
+
     <main id="main">
-    
-        <!-- ============================================ -->
-        <!--                    LANDING                   -->
-        <!-- ============================================ -->
+      <!-- ============================================ -->
+      <!--                    LANDING                   -->
+      <!-- ============================================ -->
 
-        <section id="hero">
-            <div class="container">
-                <h1>
-                    Dealer Endorsements
-                </h1>
+      <section id="hero">
+        <div class="container">
+          <h1>Dealer Endorsements</h1>
+        </div>
+      </section>
+
+      <section id="testimonials">
+        <div class="test-wrapper">
+          <div class="test-col">
+            <div class="red-quote">
+              <p>
+                As a business owner who relies on the ability for my customers
+                to get financed, I have found that Joslen Commercial Funding is
+                great to work with. Not only is Tim efficient and dependable,
+                but he consistently keeps me in the loop during the process of
+                financing my clients. Excellent communication, fantastic
+                rapport, and very rarely is he unable to get my customers
+                financed in one way or another. I would absolutely recommend Tim
+                at JCF to anyone needing funding services.
+              </p>
+              <p>
+                <span>Daniel Vincent, Owner.</span>The Equipment Place in
+                Spokane, WA.
+              </p>
+              <a href="https://www.theequipmentplace.com" target="_blank"
+                >www.theequipmentplace.com</a
+              >
             </div>
-        </section>
-
-        <section id="testimonials">
-            <div class="test-wrapper">
-                <div class="test-col">
-                    <div class="red-quote">
-                        <p>
-                            As a business owner who relies on the ability for my customers to get financed, I have found that Joslen Commercial Funding is great to work with. Not only is Tim efficient and dependable, but he consistently keeps me in the loop during the process of financing my clients. Excellent communication, fantastic rapport, and very rarely is he unable to get my customers financed in one way or another. I would absolutely recommend Tim at JCF to anyone needing funding services.
-                        </p>
-                        <p><span>Daniel Vincent, Owner.</span>The Equipment Place in Spokane, WA.</p>
-                        <a href="https://www.theequipmentplace.com" target="_blank">www.theequipmentplace.com</a>
-                    </div>
-                    <div class="blue-quote">
-                        <p>
-                            My first contact with Tim Joslen and Joslen Commercial Funding was when one of his clients bought a $40,000 wood splitter from us. The deal was wrapped up and funded within 48 hours. Tim and I met personally, and since then we have worked together on a number of deals; many of them being considered ‘hard to place’ customers. ARE Equipment endorses JCF and we look forward to a long-term relationship.
-                        </p>
-                        <p><span>Lincoln Cornthwaite, Owner.</span>ARE Equipment in Dallas, OR.</p>
-                        <a href="https://www.AREequipment.com" target="_blank">www.AREequipment.com</a>
-                    </div>
-                </div>
-                <div class="test-col">
-                    <div class="red-quote">
-                        <p>
-                            Select Motor Sales has a Longstanding Relationship with Tim... A man of Character and Integrity. We enjoy working with Tim and will continue to do business with JCF.
-                        </p>
-                        <p><span>Johnnie Kent.</span>Select Motor Sales in Lithonia, GA.</p>
-                    </div>
-                    <div class="blue-quote">
-                        <p>
-                            We have been working with Joslen Commercial Funding (JCF) exclusively for a few years now in order to help our customers meet their financial purchasing needs. Working with Tim and his team has been a pleasure. We appreciate the simple process that JCF offers to us and to our customers. So far, there has not been a deal that we have thrown JCF’s way where they have not been able to get it funded. Everyone that we have worked with at JCF is competent, knowledgeable, professional, and enjoyable to work with.
-                        </p>
-                        <p><span aria-hidden="true"></span> Chamber Motors in Boring, OR.</p>
-                        <a href="https://www.chamberstrucks.com" target="_blank">www.chamberstrucks.com</a>
-                    </div>
-                    <div class="red-quote">
-                        <p>
-                            I have worked with Joslen Commercial Funding and Tim Joslen for a number of years now. When I have a customer that needs financing, I have no hesitation putting JCF and the party together. I know that JCF works with lenders for every type of borrower, and if anyone can find financing for my customer, it is going to be them. I appreciate the way I, as the dealer, am always updated on the status of any loan as well.
-                        </p>
-                        <p><span>Kent Alwin, Owner.</span>Big Iron Brokers in Fargo, ND.</p>
-                        <a href="http://www.bigironbrokers.com" target="_blank">www.bigironbrokers.com</a>
-                    </div>
-                </div>
+            <div class="blue-quote">
+              <p>
+                My first contact with Tim Joslen and Joslen Commercial Funding
+                was when one of his clients bought a $40,000 wood splitter from
+                us. The deal was wrapped up and funded within 48 hours. Tim and
+                I met personally, and since then we have worked together on a
+                number of deals; many of them being considered ‘hard to place’
+                customers. ARE Equipment endorses JCF and we look forward to a
+                long-term relationship.
+              </p>
+              <p>
+                <span>Lincoln Cornthwaite, Owner.</span>ARE Equipment in Dallas,
+                OR.
+              </p>
+              <a href="https://www.AREequipment.com" target="_blank"
+                >www.AREequipment.com</a
+              >
             </div>
-            <a class="button-solid" href="/apply/">APPLY TODAY<span aria-hidden="true"></span></a>
-        </section>
-
- 
-        
+          </div>
+          <div class="test-col">
+            <div class="red-quote">
+              <p>
+                Select Motor Sales has a Longstanding Relationship with Tim... A
+                man of Character and Integrity. We enjoy working with Tim and
+                will continue to do business with JCF.
+              </p>
+              <p>
+                <span>Johnnie Kent.</span>Select Motor Sales in Lithonia, GA.
+              </p>
+            </div>
+            <div class="blue-quote">
+              <p>
+                We have been working with Joslen Commercial Funding (JCF)
+                exclusively for a few years now in order to help our customers
+                meet their financial purchasing needs. Working with Tim and his
+                team has been a pleasure. We appreciate the simple process that
+                JCF offers to us and to our customers. So far, there has not
+                been a deal that we have thrown JCF’s way where they have not
+                been able to get it funded. Everyone that we have worked with at
+                JCF is competent, knowledgeable, professional, and enjoyable to
+                work with.
+              </p>
+              <p>
+                <span aria-hidden="true"></span> Chamber Motors in Boring, OR.
+              </p>
+              <a href="https://www.chamberstrucks.com" target="_blank"
+                >www.chamberstrucks.com</a
+              >
+            </div>
+            <div class="red-quote">
+              <p>
+                I have worked with Joslen Commercial Funding and Tim Joslen for
+                a number of years now. When I have a customer that needs
+                financing, I have no hesitation putting JCF and the party
+                together. I know that JCF works with lenders for every type of
+                borrower, and if anyone can find financing for my customer, it
+                is going to be them. I appreciate the way I, as the dealer, am
+                always updated on the status of any loan as well.
+              </p>
+              <p>
+                <span>Kent Alwin, Owner.</span>Big Iron Brokers in Fargo, ND.
+              </p>
+              <a href="http://www.bigironbrokers.com" target="_blank"
+                >www.bigironbrokers.com</a
+              >
+            </div>
+          </div>
+        </div>
+        <a class="button-solid" href="/apply/"
+          >APPLY TODAY<span aria-hidden="true"></span
+        ></a>
+      </section>
     </main>
 
     <section id="footer">
-        <div class="container">
-            <div class="footer-contact">
-                <img src="/images/JoslenLOGO.png" loading="lazy" alt="">
-                <a href="mailto:tim@joslencommercialfunding.com">tim@joslencommercialfunding.com</a>
-                <a href="tel:503-703-5045">(503) 703-5045</a>
-                <p>Joslen Commercial Funding is a national leader in providing alternative funding solutions to businesses across the country. Our team of commercial finance consultants are dedicated to hearing and evaluating your current situation and finding you the best financing solution to fill the needs of your business. Contact us today to learn more about how we assist businesses everyday.
-                </p>
-            </div>
-            <div class="footer-middle">
-                <div class=footer-nav>
-                    <h3>Navigation</h3>
-                    <a href="/">Home</a>
-                    <a href="/about/">About</a>
-                    <a href="/faqs/">FAQs</a>
-                    <a href="/testimonials/">Testimonials</a>
-                    <a href="">Dealer Endorsements</a>
-                    <a href="/newsletters/">Newsletters</a>
-                    <a href="/contact/">Contact</a>
-                    <a class="button-solid" href="/apply/">Apply For Financing</a>
-                </div>
-            </div>
+      <div class="container">
+        <div class="footer-contact">
+          <img src="/images/JoslenLOGO.png" loading="lazy" alt="" />
+          <a href="mailto:tim@joslencommercialfunding.com"
+            >tim@joslencommercialfunding.com</a
+          >
+          <a href="tel:503-703-5045">(503) 703-5045</a>
+          <p>
+            Joslen Commercial Funding is a national leader in providing
+            alternative funding solutions to businesses across the country. Our
+            team of commercial finance consultants are dedicated to hearing and
+            evaluating your current situation and finding you the best financing
+            solution to fill the needs of your business. Contact us today to
+            learn more about how we assist businesses everyday.
+          </p>
         </div>
-        <div class="footer-bottom">
-            <p>© 2021 Joslen Commercial Funding</p>
-            <p>Designed and Developed by <a href="https://www.wildpinewebdesigns.com">Wild Pine Web Designs, LLC</a></p>    
+        <div class="footer-middle">
+          <div class="footer-nav">
+            <h3>Navigation</h3>
+            <a href="/">Home</a>
+            <a href="/about/">About</a>
+            <a href="/faqs/">FAQs</a>
+            <a href="/testimonials/">Testimonials</a>
+            <a href="">Dealer Endorsements</a>
+            <a href="/newsletters/">Newsletters</a>
+            <a href="/contact/">Contact</a>
+            <a class="button-solid" href="/apply/">Apply For Financing</a>
+          </div>
         </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2023 Joslen Commercial Funding</p>
+        <p>
+          Designed and Developed by
+          <a href="https://www.wildpinewebdesigns.com"
+            >Wild Pine Web Designs, LLC</a
+          >
+        </p>
+      </div>
     </section>
 
     <script>
-        var ba = ["MSIE","Trident","Edge"];
-        var b, ua = navigator.userAgent;
-        for(var i=0; i < ba.length; i++){
-            if( ua.indexOf(ba[i]) > -1 ){
-                b = ba[i];
-                break;
-            }
+      var ba = ["MSIE", "Trident", "Edge"];
+      var b,
+        ua = navigator.userAgent;
+      for (var i = 0; i < ba.length; i++) {
+        if (ua.indexOf(ba[i]) > -1) {
+          b = ba[i];
+          break;
         }
-        if(b == "MSIE" || b == "Trident" || b == "Edge"){
-            b = "Internet Explorer";
-            alert("You are using the " + b + " browser and this browser is incompatible with this website and many others.  Please open this page in a different browser, either Chrome or Firefox.  Thank you!");
-        }
+      }
+      if (b == "MSIE" || b == "Trident" || b == "Edge") {
+        b = "Internet Explorer";
+        alert(
+          "You are using the " +
+            b +
+            " browser and this browser is incompatible with this website and many others.  Please open this page in a different browser, either Chrome or Firefox.  Thank you!"
+        );
+      }
     </script>
 
     <script defer src="/app.js"></script>
-</body>
+  </body>
 </html>

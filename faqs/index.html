@@ -1,23 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-
+  <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7Q3CBSF1SW"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-7Q3CBSF1SW"
+    ></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-        gtag('config', 'G-7Q3CBSF1SW');
+      gtag("config", "G-7Q3CBSF1SW");
     </script>
 
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <meta name="description" content="">
-    <meta name="keywords" content="">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
 
     <!--Social Media Display-->
     <meta property="og:title" content="" />
@@ -28,291 +31,455 @@
     <meta property="og:image:secure_url" content="" />
 
     <!--Favicons-->
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
 
     <!-- CSS -->
     <!-- Use the file path for your folder system, like /css/style.css -->
-    <link rel="stylesheet" href="/css/core-styles.css">
-    <link rel="stylesheet" href="/css/faqs.css">
+    <link rel="stylesheet" href="/css/core-styles.css" />
+    <link rel="stylesheet" href="/css/faqs.css" />
 
     <!-- jQuery -->
-    <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script
+      defer
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+    ></script>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap"
+      rel="stylesheet"
+    />
 
     <title>Frequently Asked Questions | Joslen Commercial Funding, LLC</title>
-</head>
-<body>
-
-    <a class="skip" aria-label="skip to main content" href="/faqs/index.html#main">Click To Skip To Main</a>
+  </head>
+  <body>
+    <a
+      class="skip"
+      aria-label="skip to main content"
+      href="/faqs/index.html#main"
+      >Click To Skip To Main</a
+    >
 
     <header>
+      <!-- Mobile Nav Strip -->
+      <div class="mobile-wrapper">
+        <div class="mobile-nav container mobile-nav-container">
+          <img
+            id="mobile-logo"
+            src="/images/JoslenLOGO.png"
+            alt=""
+            height="80"
+          />
 
-        <!-- Mobile Nav Strip -->
-        <div class="mobile-wrapper">
-            <div class="mobile-nav container mobile-nav-container">
-                <img id="mobile-logo" src="/images/JoslenLOGO.png" alt="" height="80">
-
-                <!-- Hamburger Menu -->
-                <button aria-label="open the menu" id="menu-button" class="hamburger hamburger--spring" onclick="toggleNav()" type="button">
-                    <span aria-hidden="true" class="hamburger-box">
-                        <span aria-hidden="true" class="hamburger-inner"></span>
-                    </span>
-                </button>
-            </div>
+          <!-- Hamburger Menu -->
+          <button
+            aria-label="open the menu"
+            id="menu-button"
+            class="hamburger hamburger--spring"
+            onclick="toggleNav()"
+            type="button"
+          >
+            <span aria-hidden="true" class="hamburger-box">
+              <span aria-hidden="true" class="hamburger-inner"></span>
+            </span>
+          </button>
         </div>
+      </div>
 
-        <!-- ============================================ -->
-        <!--                   NAVIGATION                 -->
-        <!-- ============================================ -->
+      <!-- ============================================ -->
+      <!--                   NAVIGATION                 -->
+      <!-- ============================================ -->
 
-        <nav>
-            <div class="navbar-menu">
-                <div id="side-menu" class=" side-nav">
-                    <img aria-hidden="true" src="/images/JoslenLOGO.png" alt="" height="80">
-                    <ul id="on-top" class="navbar-links">
-                        <li class="nav-li"><a href="/">Home</a></li>
-                        <li class="nav-li"><a href="/about/">About</a></li>
-                        <li class="nav-li"><a class="active-menu" href="">FAQs</a></li>
-                        <li class="nav-li"><a href="/testimonials/">Testimonials</a></li>
-                        <li class="nav-li dealer-endorsements"><a href="/dealer-endorsements/"><span>Dealer</span> <span>Endorsements</span></a></li>
-                        <li class="nav-li"><a href="/newsletters/">Newsletters</a></li>
-                        <li class="nav-li"><a href="/contact/">Contact</a></li>
-                        <li class="nav-li"><a href="/apply/">Apply Now</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+      <nav>
+        <div class="navbar-menu">
+          <div id="side-menu" class="side-nav">
+            <img
+              aria-hidden="true"
+              src="/images/JoslenLOGO.png"
+              alt=""
+              height="80"
+            />
+            <ul id="on-top" class="navbar-links">
+              <li class="nav-li"><a href="/">Home</a></li>
+              <li class="nav-li"><a href="/about/">About</a></li>
+              <li class="nav-li"><a class="active-menu" href="">FAQs</a></li>
+              <li class="nav-li"><a href="/testimonials/">Testimonials</a></li>
+              <li class="nav-li dealer-endorsements">
+                <a href="/dealer-endorsements/"
+                  ><span>Dealer</span> <span>Endorsements</span></a
+                >
+              </li>
+              <li class="nav-li"><a href="/newsletters/">Newsletters</a></li>
+              <li class="nav-li"><a href="/contact/">Contact</a></li>
+              <li class="nav-li"><a href="/apply/">Apply Now</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
-        
+
     <main id="main">
-    
-        <!-- ============================================ -->
-        <!--                    LANDING                   -->
-        <!-- ============================================ -->
+      <!-- ============================================ -->
+      <!--                    LANDING                   -->
+      <!-- ============================================ -->
 
-        <section id="hero">
-            <div aria-hidden="true"></div>
-            <div class="container hero-content">
-                <h1>
-                    FAQs
-                </h1>
-            </div>
-        </section>
+      <section id="hero">
+        <div aria-hidden="true"></div>
+        <div class="container hero-content">
+          <h1>FAQs</h1>
+        </div>
+      </section>
 
-
-        <section id="faqs">
-            <div class="faq-list">
-                <div>
-                    <details open>
-                        <summary title="What is Section 179 and will it save me money?">What is Section 179 and will it save me money?</summary>
-                        <p>
-                            The Section 179 tax deduction has been extended for 2021. This bill allows for a full deduction of equipment up to $500,000, which makes it advantageous to purchase new or used equipment for your business. Have your accountant or CPA use Form 4562. More information is available at <a href="https://www.section179.org/" target="_blank">www.section179.org</a>.
-                        </p>
-                    </details>
-                </div>
-                <div>
-                    <details>
-                        <summary title="How important is good credit to qualify for financing?">How important is good credit to qualify for financing?</summary>
-                        <p>
-                            Good credit is obviously an important piece to qualifying for a loan, but is only one of many factors lenders will look at. Approval, as well as rates for a loan or lease, will be determined by time in business, homeownership, type of business, how many guarantors on the loan, history of like-size loans in the past, etc.
-                        </p>
-                    </details>
-                </div>
-                <div>
-                    <details>
-                        <summary title="What is an EFA?">What is an EFA?</summary>
-                        <p>
-                            An Equipment Finance Agreement is a very popular financing option. Although it works “like a lease”, it is technically not a lease. With an EFA, the borrower owns the property and it is secured by a UCC filing or a title. This means that only the equipment is the collateral versus an installment loan that can have a blanket lien on all of your business assets. There are numerous other benefits of an EFA as well.
-                        </p>
-                    </details>
-                </div>
-                <div>
-                    <details>
-                        <summary title="What is a collateral loan?">What is a collateral loan?</summary>
-                        <p>
-                            A collateral loan is when other lien-free equipment is used as collateral to secure the new financing. Typically, a lender will want a 2:1 ratio, which means if $30,000 was desired to purchase a piece of equipment, an additional $30,000 in equipment would be needed to put up as collateral. This type of financing is often used when credit challenges exist.
-                        </p>
-                    </details>
-                </div>
-                <div>
-                    <details>
-                        <summary title="Does a bankruptcy disqualify me?">Does a bankruptcy disqualify me?</summary>
-                        <p>
-                            If a bankruptcy is not “discharged”, then credit will not be available. After discharge, different lenders will consider offering loans after 2 – 5 years. A significant parameter will be how much credit has been established since the bankruptcy. Non-conventional financing options do exist upon bankruptcy discharge.
-                        </p>
-                    </details>
-                </div>
-                <div>
-                    <details>
-                        <summary title="What is a soft credit pull?">What is a soft credit pull?</summary>
-                        <p>
-                            All potential lenders will do a credit check on a potential borrower, but some lenders will only do a “soft” pull. This is when public data is pulled but not through a credit agency. Some lenders feel this is an adequate amount of information to determine if a loan should be approved. The advantage for the borrower is that it does not count as an inquiry on your credit report and thus does not lower your personal credit score.
-                        </p>
-                    </details>
-                </div>
-                <div>
-                    <details>
-                        <summary title="How does a broker get paid?">How does a broker get paid?</summary>
-                        <p>
-                            Some brokers will charge a fee up-front for their services and then get paid by the lender, as well as when a deal funds. Joslen Commercial Funding (JCF) will never charge you, the customer, with any fees. We also pay for all shipping. Once a loan has been placed and you have received your equipment, the lender will pay JCF according to that lender’s referral pay schedule.
-                        </p>
-                    </details>
-                </div>
-                <div>
-                    <details>
-                        <summary title="Can I pay off my loan early?">Can I pay off my loan early?</summary>
-                        <p>
-                            All loans, Equipment Finance Agreements, or Leases can be paid off at any time. Almost all commercial loans, however, are not simple interest loans where simple amortization is used, like a personal car loan would be. Commercial loans are generally contracts for the payments agreed upon and for the term. Most lenders will give a discount if a leasee would like to pay early for any reason. Many lenders will also let a borrower out of their current contract if they desire to upgrade their equipment and finance another piece.
-                        </p>
-                    </details>
-                </div>
-                <div>
-                    <details>
-                        <summary title="What is the definition of a Start-Up Business?">What is the definition of a "Start-Up Business"?</summary>
-                        <p>
-                            Almost every lender defines a “Start-up Business” as being in business for 2 years or less. There are some lenders that require 3 years. To show that timeframe, I visit the Secretary of State's website to see the date that an LLC or Corporation was formed. If someone is a sole proprietor doing business as a DBA, the lender will require a business license or tax returns from a year that would prove the length of time in business.
-                        </p>
-                    </details>
-                </div>
-                <div>
-                    <details>
-                        <summary title="How can Joslen Commercial Funding help me?">How can Joslen Commercial Funding help me?</summary>
-                        <p>
-                            Joslen Commercial Funding offers the expertise that you need in determining what type of financing is best for you. We work with most of the Nation’s top lending institutions, so after an application is processed and evaluated, our staff will determine where your best interests will be met. We work with all types of borrowers no matter what their business or credit experience is. We pride ourselves in the ability to place loans where our competitors just can’t. We also understand that your credit score is important to you, so we take every precaution to ensure that lenders are not affecting your score by running unnecessary reports. We are always your advocate in every way. Our membership in the AACFB shows our commitment to always be current on issues that could affect your bottom line.
-                        </p>
-                    </details>
-                </div>
-                <div>
-                    <details>
-                        <summary title="What are the different services and financed products that JCF offers?">What are the different services and financed products that JCF offers?</summary>
-                        <ul>
-                            <li>New and Used Heavy Equipment Leases & Loans</li>
-                            <li>Sale-leaseback Arrangements</li>
-                            <li>Industrial & Commercial Equipment Refinancing Arrangements</li>
-                            <li>Asset-based Revolving Lines of Credit</li>
-                            <li>B, C, and D Challenged Credit Programs</li>
-                            <li>Start-up Programs</li>
-                        </ul>
-                    </details>
-                </div>
-                <div>
-                    <details>
-                        <summary title="What are JCF's equipment specialties?">What are JCF's equipment specialties?</summary>
-                        <p>
-                            Joslen Commercial Funding specializes in heavy equipment and construction financing, including YELLOW IRON, TRUCKING, and LOGGING, but we can also provide the best possible terms for other types, including:
-                        </p>
-                        <ul>
-                            <li>Dental Equipment</li>
-                            <li>Construction Equipment</li>
-                            <li>Office Equipment</li>
-                            <li>Restaurant Equipment</li>
-                            <li>Point of Sale</li>
-                            <li>Industrial Equipment</li>
-                            <li>Automotive Repair Equipment</li>
-                            <li>Printing Equipment</li>
-                            <li>Metal-working Equipment</li>
-                            <li>Telecommunications Equipment</li>
-                            <li>Farming & Agricultural Equipment</li>
-                            <li>Medical Equipment</li>
-                            <li>Dry Cleaning Equipment</li>
-                            <li>Business Computers</li>
-                        </ul>
-
-                    </details>
-                </div>
-                <div>
-                    <details>
-                        <summary title="Who leases equipment?">Who leases equipment?</summary>
-                        <p>
-                            Your competitors! Approximately eight out of ten U.S. businesses use lease financing to acquire the equipment they need. In today's fast-paced business climate, getting the equipment you need when you need it is vital to your success. Leasing with Joslen Commercial Funding will provide you with the extra edge you need to stay competitive.
-                        </p>
-                    </details>
-                </div>
-                <div>
-                    <details>
-                        <summary title="What are the different advantages of leasing?">What are the different advantages of leasing?</summary>
-                        <p>
-                            <span>Conservation of Capital</span>
-                            When capital is conserved by leasing equipment, it can be put toward more profitable company uses (increasing inventories, expanding sales, etc). The average return on capital for business is 18% AFTER taxes.
-                            <span>Conservation of Credit</span>
-                            A lease is not a loan. Borrowing reduces lines of credit. Leasing is thus a NEW credit source, which allows increased borrowing capacity.
-                            <span>Off Balance Sheet Financing</span>
-                            Leases may sometimes be treated as off-balance sheet debt, which can enhance financial ratios and borrowing capacity.
-                            <span>Eliminates Obsolescence</span>
-                            Structured leases can allow upgrade and trade-up options, ensuring the latest technology.
-                            <span>Tax Benefits</span>
-                            Lease payments can sometimes be treated as a direct expense, which allows the equipment to be paid for with pre-tax dollars, whereas bank financing only allows expensing the interest costs and depreciation.
-                            <span>Flexible Financing</span>
-                            Leasing provides fixed rate financing, which specifically structures terms to accommodate the needs of each and every company. These structured leases include step-up, step-down, deferred, and seasonal payment plans.
-                            <span>So Why Do People Lease?</span>
-                            Companies lease equipment because leasing represents the best use of their financial resources. Businesses, which do not lease, operate at a competitive disadvantage. They deny themselves the productivity-enhancing effect of newer/better equipment. Ultimately, they may lose the ability to compete, having higher costs and lower productivity than more efficienctly run operations.
-                        </p>
-                    </details>
-                </div>
-
-
-
-            </div>
-            <p>Still have questions? Give us a shout!</p>
-            <a class="button-solid" href="/contact/">CONTACT US<span aria-hidden="true"></span></a>
-        </section>
-
- 
-        
+      <section id="faqs">
+        <div class="faq-list">
+          <div>
+            <details open>
+              <summary title="What is Section 179 and will it save me money?">
+                What is Section 179 and will it save me money?
+              </summary>
+              <p>
+                The Section 179 tax deduction has been extended for 2021. This
+                bill allows for a full deduction of equipment up to $500,000,
+                which makes it advantageous to purchase new or used equipment
+                for your business. Have your accountant or CPA use Form 4562.
+                More information is available at
+                <a href="https://www.section179.org/" target="_blank"
+                  >www.section179.org</a
+                >.
+              </p>
+            </details>
+          </div>
+          <div>
+            <details>
+              <summary
+                title="How important is good credit to qualify for financing?"
+              >
+                How important is good credit to qualify for financing?
+              </summary>
+              <p>
+                Good credit is obviously an important piece to qualifying for a
+                loan, but is only one of many factors lenders will look at.
+                Approval, as well as rates for a loan or lease, will be
+                determined by time in business, homeownership, type of business,
+                how many guarantors on the loan, history of like-size loans in
+                the past, etc.
+              </p>
+            </details>
+          </div>
+          <div>
+            <details>
+              <summary title="What is an EFA?">What is an EFA?</summary>
+              <p>
+                An Equipment Finance Agreement is a very popular financing
+                option. Although it works “like a lease”, it is technically not
+                a lease. With an EFA, the borrower owns the property and it is
+                secured by a UCC filing or a title. This means that only the
+                equipment is the collateral versus an installment loan that can
+                have a blanket lien on all of your business assets. There are
+                numerous other benefits of an EFA as well.
+              </p>
+            </details>
+          </div>
+          <div>
+            <details>
+              <summary title="What is a collateral loan?">
+                What is a collateral loan?
+              </summary>
+              <p>
+                A collateral loan is when other lien-free equipment is used as
+                collateral to secure the new financing. Typically, a lender will
+                want a 2:1 ratio, which means if $30,000 was desired to purchase
+                a piece of equipment, an additional $30,000 in equipment would
+                be needed to put up as collateral. This type of financing is
+                often used when credit challenges exist.
+              </p>
+            </details>
+          </div>
+          <div>
+            <details>
+              <summary title="Does a bankruptcy disqualify me?">
+                Does a bankruptcy disqualify me?
+              </summary>
+              <p>
+                If a bankruptcy is not “discharged”, then credit will not be
+                available. After discharge, different lenders will consider
+                offering loans after 2 – 5 years. A significant parameter will
+                be how much credit has been established since the bankruptcy.
+                Non-conventional financing options do exist upon bankruptcy
+                discharge.
+              </p>
+            </details>
+          </div>
+          <div>
+            <details>
+              <summary title="What is a soft credit pull?">
+                What is a soft credit pull?
+              </summary>
+              <p>
+                All potential lenders will do a credit check on a potential
+                borrower, but some lenders will only do a “soft” pull. This is
+                when public data is pulled but not through a credit agency. Some
+                lenders feel this is an adequate amount of information to
+                determine if a loan should be approved. The advantage for the
+                borrower is that it does not count as an inquiry on your credit
+                report and thus does not lower your personal credit score.
+              </p>
+            </details>
+          </div>
+          <div>
+            <details>
+              <summary title="How does a broker get paid?">
+                How does a broker get paid?
+              </summary>
+              <p>
+                Some brokers will charge a fee up-front for their services and
+                then get paid by the lender, as well as when a deal funds.
+                Joslen Commercial Funding (JCF) will never charge you, the
+                customer, with any fees. We also pay for all shipping. Once a
+                loan has been placed and you have received your equipment, the
+                lender will pay JCF according to that lender’s referral pay
+                schedule.
+              </p>
+            </details>
+          </div>
+          <div>
+            <details>
+              <summary title="Can I pay off my loan early?">
+                Can I pay off my loan early?
+              </summary>
+              <p>
+                All loans, Equipment Finance Agreements, or Leases can be paid
+                off at any time. Almost all commercial loans, however, are not
+                simple interest loans where simple amortization is used, like a
+                personal car loan would be. Commercial loans are generally
+                contracts for the payments agreed upon and for the term. Most
+                lenders will give a discount if a leasee would like to pay early
+                for any reason. Many lenders will also let a borrower out of
+                their current contract if they desire to upgrade their equipment
+                and finance another piece.
+              </p>
+            </details>
+          </div>
+          <div>
+            <details>
+              <summary title="What is the definition of a Start-Up Business?">
+                What is the definition of a "Start-Up Business"?
+              </summary>
+              <p>
+                Almost every lender defines a “Start-up Business” as being in
+                business for 2 years or less. There are some lenders that
+                require 3 years. To show that timeframe, I visit the Secretary
+                of State's website to see the date that an LLC or Corporation
+                was formed. If someone is a sole proprietor doing business as a
+                DBA, the lender will require a business license or tax returns
+                from a year that would prove the length of time in business.
+              </p>
+            </details>
+          </div>
+          <div>
+            <details>
+              <summary title="How can Joslen Commercial Funding help me?">
+                How can Joslen Commercial Funding help me?
+              </summary>
+              <p>
+                Joslen Commercial Funding offers the expertise that you need in
+                determining what type of financing is best for you. We work with
+                most of the Nation’s top lending institutions, so after an
+                application is processed and evaluated, our staff will determine
+                where your best interests will be met. We work with all types of
+                borrowers no matter what their business or credit experience is.
+                We pride ourselves in the ability to place loans where our
+                competitors just can’t. We also understand that your credit
+                score is important to you, so we take every precaution to ensure
+                that lenders are not affecting your score by running unnecessary
+                reports. We are always your advocate in every way. Our
+                membership in the AACFB shows our commitment to always be
+                current on issues that could affect your bottom line.
+              </p>
+            </details>
+          </div>
+          <div>
+            <details>
+              <summary
+                title="What are the different services and financed products that JCF offers?"
+              >
+                What are the different services and financed products that JCF
+                offers?
+              </summary>
+              <ul>
+                <li>New and Used Heavy Equipment Leases & Loans</li>
+                <li>Sale-leaseback Arrangements</li>
+                <li>
+                  Industrial & Commercial Equipment Refinancing Arrangements
+                </li>
+                <li>Asset-based Revolving Lines of Credit</li>
+                <li>B, C, and D Challenged Credit Programs</li>
+                <li>Start-up Programs</li>
+              </ul>
+            </details>
+          </div>
+          <div>
+            <details>
+              <summary title="What are JCF's equipment specialties?">
+                What are JCF's equipment specialties?
+              </summary>
+              <p>
+                Joslen Commercial Funding specializes in heavy equipment and
+                construction financing, including YELLOW IRON, TRUCKING, and
+                LOGGING, but we can also provide the best possible terms for
+                other types, including:
+              </p>
+              <ul>
+                <li>Dental Equipment</li>
+                <li>Construction Equipment</li>
+                <li>Office Equipment</li>
+                <li>Restaurant Equipment</li>
+                <li>Point of Sale</li>
+                <li>Industrial Equipment</li>
+                <li>Automotive Repair Equipment</li>
+                <li>Printing Equipment</li>
+                <li>Metal-working Equipment</li>
+                <li>Telecommunications Equipment</li>
+                <li>Farming & Agricultural Equipment</li>
+                <li>Medical Equipment</li>
+                <li>Dry Cleaning Equipment</li>
+                <li>Business Computers</li>
+              </ul>
+            </details>
+          </div>
+          <div>
+            <details>
+              <summary title="Who leases equipment?">
+                Who leases equipment?
+              </summary>
+              <p>
+                Your competitors! Approximately eight out of ten U.S. businesses
+                use lease financing to acquire the equipment they need. In
+                today's fast-paced business climate, getting the equipment you
+                need when you need it is vital to your success. Leasing with
+                Joslen Commercial Funding will provide you with the extra edge
+                you need to stay competitive.
+              </p>
+            </details>
+          </div>
+          <div>
+            <details>
+              <summary title="What are the different advantages of leasing?">
+                What are the different advantages of leasing?
+              </summary>
+              <p>
+                <span>Conservation of Capital</span>
+                When capital is conserved by leasing equipment, it can be put
+                toward more profitable company uses (increasing inventories,
+                expanding sales, etc). The average return on capital for
+                business is 18% AFTER taxes.
+                <span>Conservation of Credit</span>
+                A lease is not a loan. Borrowing reduces lines of credit.
+                Leasing is thus a NEW credit source, which allows increased
+                borrowing capacity.
+                <span>Off Balance Sheet Financing</span>
+                Leases may sometimes be treated as off-balance sheet debt, which
+                can enhance financial ratios and borrowing capacity.
+                <span>Eliminates Obsolescence</span>
+                Structured leases can allow upgrade and trade-up options,
+                ensuring the latest technology.
+                <span>Tax Benefits</span>
+                Lease payments can sometimes be treated as a direct expense,
+                which allows the equipment to be paid for with pre-tax dollars,
+                whereas bank financing only allows expensing the interest costs
+                and depreciation.
+                <span>Flexible Financing</span>
+                Leasing provides fixed rate financing, which specifically
+                structures terms to accommodate the needs of each and every
+                company. These structured leases include step-up, step-down,
+                deferred, and seasonal payment plans.
+                <span>So Why Do People Lease?</span>
+                Companies lease equipment because leasing represents the best
+                use of their financial resources. Businesses, which do not
+                lease, operate at a competitive disadvantage. They deny
+                themselves the productivity-enhancing effect of newer/better
+                equipment. Ultimately, they may lose the ability to compete,
+                having higher costs and lower productivity than more
+                efficienctly run operations.
+              </p>
+            </details>
+          </div>
+        </div>
+        <p>Still have questions? Give us a shout!</p>
+        <a class="button-solid" href="/contact/"
+          >CONTACT US<span aria-hidden="true"></span
+        ></a>
+      </section>
     </main>
 
     <section id="footer">
-        <div class="container">
-            <div class="footer-contact">
-                <img src="/images/JoslenLOGO.png" loading="lazy" alt="">
-                <a href="mailto:tim@joslencommercialfunding.com">tim@joslencommercialfunding.com</a>
-                <a href="tel:503-703-5045">(503) 703-5045</a>
-                <p>Joslen Commercial Funding is a national leader in providing alternative funding solutions to businesses across the country. Our team of commercial finance consultants are dedicated to hearing and evaluating your current situation and finding you the best financing solution to fill the needs of your business. Contact us today to learn more about how we assist businesses everyday.
-                </p>
-            </div>
-            <div class="footer-middle">
-                <div class=footer-nav>
-                    <h3>Navigation</h3>
-                    <a href="/">Home</a>
-                    <a href="/about/">About</a>
-                    <a href="">FAQs</a>
-                    <a href="/testimonials/">Testimonials</a>
-                    <a href="/dealer-endorsements/">Dealer Endorsements</a>
-                    <a href="/newsletters/">Newsletters</a>
-                    <a href="/contact/">Contact</a>
-                    <a class="button-solid" href="/apply/">Apply For Financing</a>
-                </div>
-            </div>
+      <div class="container">
+        <div class="footer-contact">
+          <img src="/images/JoslenLOGO.png" loading="lazy" alt="" />
+          <a href="mailto:tim@joslencommercialfunding.com"
+            >tim@joslencommercialfunding.com</a
+          >
+          <a href="tel:503-703-5045">(503) 703-5045</a>
+          <p>
+            Joslen Commercial Funding is a national leader in providing
+            alternative funding solutions to businesses across the country. Our
+            team of commercial finance consultants are dedicated to hearing and
+            evaluating your current situation and finding you the best financing
+            solution to fill the needs of your business. Contact us today to
+            learn more about how we assist businesses everyday.
+          </p>
         </div>
-        <div class="footer-bottom">
-            <p>© 2021 Joslen Commercial Funding</p>
-            <p>Designed and Developed by <a href="https://www.wildpinewebdesigns.com">Wild Pine Web Designs, LLC</a></p>    
+        <div class="footer-middle">
+          <div class="footer-nav">
+            <h3>Navigation</h3>
+            <a href="/">Home</a>
+            <a href="/about/">About</a>
+            <a href="">FAQs</a>
+            <a href="/testimonials/">Testimonials</a>
+            <a href="/dealer-endorsements/">Dealer Endorsements</a>
+            <a href="/newsletters/">Newsletters</a>
+            <a href="/contact/">Contact</a>
+            <a class="button-solid" href="/apply/">Apply For Financing</a>
+          </div>
         </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2023 Joslen Commercial Funding</p>
+        <p>
+          Designed and Developed by
+          <a href="https://www.wildpinewebdesigns.com"
+            >Wild Pine Web Designs, LLC</a
+          >
+        </p>
+      </div>
     </section>
 
     <script>
-        var ba = ["MSIE","Trident","Edge"];
-        var b, ua = navigator.userAgent;
-        for(var i=0; i < ba.length; i++){
-            if( ua.indexOf(ba[i]) > -1 ){
-                b = ba[i];
-                break;
-            }
+      var ba = ["MSIE", "Trident", "Edge"];
+      var b,
+        ua = navigator.userAgent;
+      for (var i = 0; i < ba.length; i++) {
+        if (ua.indexOf(ba[i]) > -1) {
+          b = ba[i];
+          break;
         }
-        if(b == "MSIE" || b == "Trident" || b == "Edge"){
-            b = "Internet Explorer";
-            alert("You are using the " + b + " browser and this browser is incompatible with this website and many others.  Please open this page in a different browser, either Chrome or Firefox.  Thank you!");
-        }
+      }
+      if (b == "MSIE" || b == "Trident" || b == "Edge") {
+        b = "Internet Explorer";
+        alert(
+          "You are using the " +
+            b +
+            " browser and this browser is incompatible with this website and many others.  Please open this page in a different browser, either Chrome or Firefox.  Thank you!"
+        );
+      }
     </script>
 
     <script defer src="/app.js"></script>
-</body>
+  </body>
 </html>
