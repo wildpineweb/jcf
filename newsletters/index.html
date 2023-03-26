@@ -1,23 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-
+  <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7Q3CBSF1SW"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-7Q3CBSF1SW"
+    ></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-        gtag('config', 'G-7Q3CBSF1SW');
+      gtag("config", "G-7Q3CBSF1SW");
     </script>
 
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <meta name="description" content="">
-    <meta name="keywords" content="">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
 
     <!--Social Media Display-->
     <meta property="og:title" content="" />
@@ -28,210 +31,372 @@
     <meta property="og:image:secure_url" content="" />
 
     <!--Favicons-->
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
 
     <!-- CSS -->
     <!-- Use the file path for your folder system, like /css/style.css -->
-    <link rel="stylesheet" href="/css/core-styles.css">
-    <link rel="stylesheet" href="/css/newsletters.css">
+    <link rel="stylesheet" href="/css/core-styles.css" />
+    <link rel="stylesheet" href="/css/newsletters.css" />
 
     <!-- jQuery -->
-    <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script
+      defer
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+    ></script>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap"
+      rel="stylesheet"
+    />
 
     <title>Monthly Newsletters | Joslen Commercial Funding, LLC</title>
-</head>
-<body>
-
-    <a class="skip" aria-label="skip to main content" href="/newsletters/index.html#main">Click To Skip To Main</a>
+  </head>
+  <body>
+    <a
+      class="skip"
+      aria-label="skip to main content"
+      href="/newsletters/index.html#main"
+      >Click To Skip To Main</a
+    >
 
     <header>
+      <!-- Mobile Nav Strip -->
+      <div class="mobile-wrapper">
+        <div class="mobile-nav container mobile-nav-container">
+          <img
+            id="mobile-logo"
+            src="/images/JoslenLOGO.png"
+            alt=""
+            height="80"
+          />
 
-        <!-- Mobile Nav Strip -->
-        <div class="mobile-wrapper">
-            <div class="mobile-nav container mobile-nav-container">
-                <img id="mobile-logo" src="/images/JoslenLOGO.png" alt="" height="80">
-
-                <!-- Hamburger Menu -->
-                <button aria-label="open the menu" id="menu-button" class="hamburger hamburger--spring" onclick="toggleNav()" type="button">
-                    <span aria-hidden="true" class="hamburger-box">
-                        <span aria-hidden="true" class="hamburger-inner"></span>
-                    </span>
-                </button>
-            </div>
+          <!-- Hamburger Menu -->
+          <button
+            aria-label="open the menu"
+            id="menu-button"
+            class="hamburger hamburger--spring"
+            onclick="toggleNav()"
+            type="button"
+          >
+            <span aria-hidden="true" class="hamburger-box">
+              <span aria-hidden="true" class="hamburger-inner"></span>
+            </span>
+          </button>
         </div>
+      </div>
 
-        <!-- ============================================ -->
-        <!--                   NAVIGATION                 -->
-        <!-- ============================================ -->
+      <!-- ============================================ -->
+      <!--                   NAVIGATION                 -->
+      <!-- ============================================ -->
 
-        <nav>
-            <div class="navbar-menu">
-                <div id="side-menu" class=" side-nav">
-                    <img aria-hidden="true" src="/images/JoslenLOGO.png" alt="" height="80">
-                    <ul id="on-top" class="navbar-links">
-                        <li class="nav-li"><a href="/">Home</a></li>
-                        <li class="nav-li"><a href="/about/">About</a></li>
-                        <li class="nav-li"><a href="/faqs/">FAQs</a></li>
-                        <li class="nav-li"><a href="/testimonials/">Testimonials</a></li>
-                        <li class="nav-li dealer-endorsements"><a href="/dealer-endorsements/"><span>Dealer</span> <span>Endorsements</span></a></li>
-                        <li class="nav-li"><a class="active-menu" href="">Newsletters</a></li>
-                        <li class="nav-li"><a href="/contact/">Contact</a></li>
-                        <li class="nav-li"><a href="/apply/">Apply Now</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+      <nav>
+        <div class="navbar-menu">
+          <div id="side-menu" class="side-nav">
+            <img
+              aria-hidden="true"
+              src="/images/JoslenLOGO.png"
+              alt=""
+              height="80"
+            />
+            <ul id="on-top" class="navbar-links">
+              <li class="nav-li"><a href="/">Home</a></li>
+              <li class="nav-li"><a href="/about/">About</a></li>
+              <li class="nav-li"><a href="/faqs/">FAQs</a></li>
+              <li class="nav-li"><a href="/testimonials/">Testimonials</a></li>
+              <li class="nav-li dealer-endorsements">
+                <a href="/dealer-endorsements/"
+                  ><span>Dealer</span> <span>Endorsements</span></a
+                >
+              </li>
+              <li class="nav-li">
+                <a class="active-menu" href="">Newsletters</a>
+              </li>
+              <li class="nav-li"><a href="/contact/">Contact</a></li>
+              <li class="nav-li"><a href="/apply/">Apply Now</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
-        
+
     <main id="main">
-    
-        <!-- ============================================ -->
-        <!--                    LANDING                   -->
-        <!-- ============================================ -->
+      <!-- ============================================ -->
+      <!--                    LANDING                   -->
+      <!-- ============================================ -->
 
-        <section id="hero">
-            <div class="container">
-                <h1>
-                    Newsletters
-                </h1>
-            </div>
-        </section>
+      <section id="hero">
+        <div class="container">
+          <h1>Newsletters</h1>
+        </div>
+      </section>
 
-        <section id="newsletters">
-            <div class="left-col">
-                <div class="card">
-                    <h1><a href="the-value-of-a-lending-specialist-broker.html">The Value of a Lending Specialist Broker</a></h1>
-                    <h4>May 2022</h4>
-                    <div class="news-content">
-                        <p>Joslen Commercial Funding LLC (JCF) is proud of its history and the number of small business owners that they have been able to help with their commercial financing needs. Oftentimes, I am asked if JCF is a "direct lender", to which I respond, “No, but are you looking for one?” Once I help them understand the services offered by a direct lender compared to the services and benefits that are offered by a specialist broker (such as JCF!), the light seems to come on for them.</p>
-                        <p>Commercial lending is a huge industry and exists because relationship lending with credit unions and local banks is becoming progressively scarcer. While JCF works primarily with companies who need financing for business-essential equipment and working capital loans, we have additionally created partnerships for SBA loans, factoring specialists, real estate financing for all credit tiers, etc. The industry works within an undefined, tight network of professionals who recognize the specialties and abilities of other agencies.</p>
-                        <p><b>But more specifically, what can JCF offer you?</b></p></p>
-                    </div>
-                    <a href="the-value-of-a-lending-specialist-broker.html">Read More</a>
-                </div>
-                <div class="card">
-                    <h1><a href="increase-your-credit-score.html">Looking to Increase Your Credit Score?</a></h1>
-                    <h4>April 2022</h4>
-                    <div class="news-content">
-                        <p>In previous newsletters, I have written about the myths about what affects and does not affect your personal credit score. Although there are a number of things that a lender will look at before offering commercial financing, a credit score very much plays a big part in their decision for approval and rates. All lenders have thresholds with credit score if you are anything below 750. Most commercial buyers are between 550 - 700, so the difference in rate between 600 to 650 could mean a number of more lenders willing to compete for your business. You may be surprised how much you can raise your score by just paying attention to a few small details and paying less attention to the "myths" about credit score that are out there.</p>
-                    </div>
-                    <a href="increase-your-credit-score.html">Read More</a>
-                </div>
-                <div class="card">
-                    <h1><a href="could-an-sba-loan-be-right-for-your-business.html">Could An SBA Loan Be Right For Your Business?</a></h1>
-                    <h4>March 2022</h4>
-                    <div class="news-content">
-                        <p>Those who have obtained Small Business Administration loans often have the same consensus on the process and results. Whereas an SBA loan can certainly offer some attractive terms for a small business, the qualifications to obtain and the time it takes to secure one of these loans can be frustrating for the borrower. SBA loans and the application process can be cumbersome and it takes a specialist to deal with the idiosyncrasies of the 12 different SBA programs available.</p>
-                        <p>Joslen Commercial Funding has recently partnered with a leader in this specialized field to expand the services we can provide for our customers.  What makes this partnership unique is that the principals spent years at a conventional bank (Wells Fargo) processing SBA loans resulting in a complete understanding of the SBA underwriting processes. In the many years since they created their own company only two times have they given conditional approval to a borrower and not had the loan come to fruition. These types of results are invaluable as it keeps borrowers from jumping through the many hoops required only to ultimately get turned down.</p>
-                    </div>
-                    <a href="could-an-sba-loan-be-right-for-your-business.html">Read More</a>
-                </div>
+      <section id="newsletters">
+        <div class="left-col">
+          <div class="card">
+            <h1>
+              <a href="hard-pull-vs-soft-pull-the-ins-and-outs.html"
+                >Hard Pull Vs. Soft Pull: The Ins and Outs</a
+              >
+            </h1>
+            <h4>March 2023</h4>
+            <div class="news-content">
+              <p>
+                Before I process an application for commercial credit i am often
+                asked whether I do a 'hard' credit pull or a 'soft' credit pull.
+                We all know that a hard pull show as an inquiry on your credit
+                report while a soft one does not, but it is commonly
+                misunderstood why one is done over the other or vice versa.
+              </p>
+              <h5 style="font-size: 1.2em">What is a hard credit pull?</h5>
+              <p>
+                When you apply for a new credit card, mortgage, or other type of
+                loan, the lender will do a hard pull on your credit. This means
+                they will access your full credit report for the purpose of
+                making a lending decision.
+              </p>
             </div>
-            <div class="right-col">
-                <div class="card signup">
-                    <h3>Sign Up for JCF's Monthly Newsletter</h3>
-                    <form id="newsletter-signup-form" name="Newsletter Sign-Up Form" method="post" netlify-honeypot="bot-field" data-netlify="true">
-                        <p class="hidden">
-                            <label>Don't fill this out if you're human: <input name="bot-field" /></label>
-                        </p>
-                        <input aria-label="first name" class="input1" name="first name" placeholder="First Name" type="text" tabindex="1" required>
-                        <input aria-label="last name" class="input1" name="last name" placeholder="Last Name" type="text" tabindex="2" required>
-                        <input aria-label="email" class="input1 right" name="email" placeholder="Email Address" type="email" tabindex="3" required>
-                        <p class="form-submit">
-                            <button name="submit" type="submit" id="contact-submit" class="primary button-solid" data-submit="...Sending" tabindex="4">Submit</button>
-                        </p>
-                    </form>
-                </div>
-                <div class="card">
-                    <h2>Previous Newsletters</h2>
-                    <a href="the-value-of-a-lending-specialist-broker.html">The Value of a Lending Specialist Broker</a>
-                    <a href="increase-your-credit-score.html">Looking to Increase Your Credit Score?</a>
-                    <a href="could-an-sba-loan-be-right-for-your-business.html">Could An SBA Loan Be Right For Your Business?</a>
-                    <a href="why-joslen-commercial-funding-2-22.html">Why Joslen Commercial Funding? (February 2022 Edition)</a>
-                    <a href="helping-you-in-2022.html">Helping You in 2022!</a>
-                    <a href="what-is-irs-code-section-179.html">IRS Code Section 179 | What is it - in Simple Terms?</a>
-                    <a href="jcf-offers-more-than-just-equipment-loans-11-21-ed.html">JCF Offers More Than Just Equipment Loans (November 2021 Edition)</a>
-                    <a href="5-ways-for-business-owners-to-reduce-their-taxable-income.html">5 Ways for Business Owners to Reduce Their Taxable Income</a>
-                    <a href="marketing-your-business-for-150-dollars.html">Marketing Your Business for $150</a>
-                    <a href="lending-criteria-at-a-glance.html">Lending Criteria at a Glance</a>
-                    <a href="can't-find-the-right-equipment.html">Can't Find the Right Equipment?</a>
-                    <a href="what-is-identity-theft.html">What is Identity Theft?</a>
-                    <a href="how-to-increase-your-chances-for-loan-approvals.html">How to Increase Your Chances for Loan Approvals</a>
-                    <a href="how-does-a-lender-determine-finance-terms-on-used-equipment-part-2.html">How Does a Lender Determine Finance Terms on Used Equipment? (Part 2)</a>
-                    <a href="how-does-a-lender-determine-finance-terms-on-used-equipment-part-1.html">How Does a Lender Determine Finance Terms on Used Equipment? (Part 1)</a>
-                    <a href="make-a-goal-to-improve-your-credit-score-in-2021.html">Make a Goal to Improve Your Credit Score in 2021</a>
-                    <a href="welcome-2021-and-a-look-back-at-2020.html">Welcome 2021!.... And a look back at 2020</a>
-                    <a href="taking-advantage-of-irs-gifts.html">Taking advantage of IRS “GIFTS”</a>
-                    <a href="why-joslen-commercial-funding.html">Why Joslen Commercial Funding?</a>
-                    <a href="a-few-points-how-covid-has-changed-commercial-lending.html">A Few Points How COVID Has Changed Commercial Lending</a>
-                    <a href="understanding-your-credit-score.html">Understanding Your Credit Score</a>
-                    <a href="start-up-business-let-me-go-to-bat-for-you.html">Start-up Business?  Let me go to Bat for You!</a>
-                    <a href="just-some-pertinent-updates.html">Just Some Pertinent Updates...</a>
-                    <a href="many-lenders-negotiating-payback-terms.html">Many Lenders Negotiating Payback Terms</a>
-                    <a href="just-a-reminder-credit-matters.html">Just a Reminder – CREDIT MATTERS!</a>
-                    <a href="jcf-offers-more-than-just-equipment-loans.html">JCF Offers More than just Equipment Loans</a>
-                    <a href="hello-2020-and-a-look-back-at-2019.html">HELLO 2020!... and a look back at 2019</a>
-                </div>
+            <a href="hard-pull-vs-soft-pull-the-ins-and-outs.html">Read More</a>
+          </div>
+          <div class="card">
+            <h1>
+              <a href="want-a-higher-credit-score.html"
+                >Want a Higher Credit Score?</a
+              >
+            </h1>
+            <h4>February 2023</h4>
+            <div class="news-content">
+              <p>
+                In previous newsletters, I have written about the myths about
+                what affects and does not affect your personal credit score.
+                Although there are a number of things that a lender will look at
+                before offering commercial financing, a credit score very much
+                will play a big part in their decision for approval and rates.
+                All lenders have thresh holds with credit score if you are
+                anything below a 750. Most commercial buyers are between 550 -
+                700 so the difference in rate from 600 to 650 can mean a number
+                of more lenders willing to compete for your business. You may be
+                surprised how you can raise your score by just paying attention
+                to a few small details and getting the "myths" out of your mind.
+              </p>
             </div>
-        </section>
-
- 
-        
+            <a href="want-a-higher-credit-score.html">Read More</a>
+          </div>
+        </div>
+        <div class="right-col">
+          <div class="card signup">
+            <h3>Sign Up for JCF's Monthly Newsletter</h3>
+            <form
+              id="newsletter-signup-form"
+              name="Newsletter Sign-Up Form"
+              method="post"
+              netlify-honeypot="bot-field"
+              data-netlify="true"
+            >
+              <p class="hidden">
+                <label
+                  >Don't fill this out if you're human: <input name="bot-field"
+                /></label>
+              </p>
+              <input
+                aria-label="first name"
+                class="input1"
+                name="first name"
+                placeholder="First Name"
+                type="text"
+                tabindex="1"
+                required
+              />
+              <input
+                aria-label="last name"
+                class="input1"
+                name="last name"
+                placeholder="Last Name"
+                type="text"
+                tabindex="2"
+                required
+              />
+              <input
+                aria-label="email"
+                class="input1 right"
+                name="email"
+                placeholder="Email Address"
+                type="email"
+                tabindex="3"
+                required
+              />
+              <p class="form-submit">
+                <button
+                  name="submit"
+                  type="submit"
+                  id="contact-submit"
+                  class="primary button-solid"
+                  data-submit="...Sending"
+                  tabindex="4"
+                >
+                  Submit
+                </button>
+              </p>
+            </form>
+          </div>
+          <div class="card">
+            <h2>Previous Newsletters</h2>
+            <a href="the-value-of-a-lending-specialist-broker.html"
+              >The Value of a Lending Specialist Broker</a
+            >
+            <a href="increase-your-credit-score.html"
+              >Looking to Increase Your Credit Score?</a
+            >
+            <a href="could-an-sba-loan-be-right-for-your-business.html"
+              >Could An SBA Loan Be Right For Your Business?</a
+            >
+            <a href="why-joslen-commercial-funding-2-22.html"
+              >Why Joslen Commercial Funding? (February 2022 Edition)</a
+            >
+            <a href="helping-you-in-2022.html">Helping You in 2022!</a>
+            <a href="what-is-irs-code-section-179.html"
+              >IRS Code Section 179 | What is it - in Simple Terms?</a
+            >
+            <a href="jcf-offers-more-than-just-equipment-loans-11-21-ed.html"
+              >JCF Offers More Than Just Equipment Loans (November 2021
+              Edition)</a
+            >
+            <a
+              href="5-ways-for-business-owners-to-reduce-their-taxable-income.html"
+              >5 Ways for Business Owners to Reduce Their Taxable Income</a
+            >
+            <a href="marketing-your-business-for-150-dollars.html"
+              >Marketing Your Business for $150</a
+            >
+            <a href="lending-criteria-at-a-glance.html"
+              >Lending Criteria at a Glance</a
+            >
+            <a href="can't-find-the-right-equipment.html"
+              >Can't Find the Right Equipment?</a
+            >
+            <a href="what-is-identity-theft.html">What is Identity Theft?</a>
+            <a href="how-to-increase-your-chances-for-loan-approvals.html"
+              >How to Increase Your Chances for Loan Approvals</a
+            >
+            <a
+              href="how-does-a-lender-determine-finance-terms-on-used-equipment-part-2.html"
+              >How Does a Lender Determine Finance Terms on Used Equipment?
+              (Part 2)</a
+            >
+            <a
+              href="how-does-a-lender-determine-finance-terms-on-used-equipment-part-1.html"
+              >How Does a Lender Determine Finance Terms on Used Equipment?
+              (Part 1)</a
+            >
+            <a href="make-a-goal-to-improve-your-credit-score-in-2021.html"
+              >Make a Goal to Improve Your Credit Score in 2021</a
+            >
+            <a href="welcome-2021-and-a-look-back-at-2020.html"
+              >Welcome 2021!.... And a look back at 2020</a
+            >
+            <a href="taking-advantage-of-irs-gifts.html"
+              >Taking advantage of IRS “GIFTS”</a
+            >
+            <a href="why-joslen-commercial-funding.html"
+              >Why Joslen Commercial Funding?</a
+            >
+            <a href="a-few-points-how-covid-has-changed-commercial-lending.html"
+              >A Few Points How COVID Has Changed Commercial Lending</a
+            >
+            <a href="understanding-your-credit-score.html"
+              >Understanding Your Credit Score</a
+            >
+            <a href="start-up-business-let-me-go-to-bat-for-you.html"
+              >Start-up Business? Let me go to Bat for You!</a
+            >
+            <a href="just-some-pertinent-updates.html"
+              >Just Some Pertinent Updates...</a
+            >
+            <a href="many-lenders-negotiating-payback-terms.html"
+              >Many Lenders Negotiating Payback Terms</a
+            >
+            <a href="just-a-reminder-credit-matters.html"
+              >Just a Reminder – CREDIT MATTERS!</a
+            >
+            <a href="jcf-offers-more-than-just-equipment-loans.html"
+              >JCF Offers More than just Equipment Loans</a
+            >
+            <a href="hello-2020-and-a-look-back-at-2019.html"
+              >HELLO 2020!... and a look back at 2019</a
+            >
+          </div>
+        </div>
+      </section>
     </main>
 
     <section id="footer">
-        <div class="container">
-            <div class="footer-contact">
-                <img src="/images/JoslenLOGO.png" loading="lazy" alt="">
-                <a href="mailto:tim@joslencommercialfunding.com">tim@joslencommercialfunding.com</a>
-                <a href="tel:503-703-5045">(503) 703-5045</a>
-                <p>Joslen Commercial Funding is a national leader in providing alternative funding solutions to businesses across the country. Our team of commercial finance consultants are dedicated to hearing and evaluating your current situation and finding you the best financing solution to fill the needs of your business. Contact us today to learn more about how we assist businesses everyday.
-                </p>
-            </div>
-            <div class="footer-middle">
-                <div class=footer-nav>
-                    <h3>Navigation</h3>
-                    <a href="/">Home</a>
-                    <a href="/about/">About</a>
-                    <a href="/faqs/">FAQs</a>
-                    <a href="/testimonials/">Testimonials</a>
-                    <a href="/dealer-endorsements/">Dealer Endorsements</a>
-                    <a href="">Newsletters</a>
-                    <a href="/contact/">Contact</a>
-                    <a class="button-solid" href="/apply/">Apply For Financing</a>
-                </div>
-            </div>
+      <div class="container">
+        <div class="footer-contact">
+          <img src="/images/JoslenLOGO.png" loading="lazy" alt="" />
+          <a href="mailto:tim@joslencommercialfunding.com"
+            >tim@joslencommercialfunding.com</a
+          >
+          <a href="tel:503-703-5045">(503) 703-5045</a>
+          <p>
+            Joslen Commercial Funding is a national leader in providing
+            alternative funding solutions to businesses across the country. Our
+            team of commercial finance consultants are dedicated to hearing and
+            evaluating your current situation and finding you the best financing
+            solution to fill the needs of your business. Contact us today to
+            learn more about how we assist businesses everyday.
+          </p>
         </div>
-        <div class="footer-bottom">
-            <p>© 2023 Joslen Commercial Funding</p>
-            <p>Designed and Developed by <a href="https://www.wildpinewebdesigns.com">Wild Pine Web Designs, LLC</a></p>    
+        <div class="footer-middle">
+          <div class="footer-nav">
+            <h3>Navigation</h3>
+            <a href="/">Home</a>
+            <a href="/about/">About</a>
+            <a href="/faqs/">FAQs</a>
+            <a href="/testimonials/">Testimonials</a>
+            <a href="/dealer-endorsements/">Dealer Endorsements</a>
+            <a href="">Newsletters</a>
+            <a href="/contact/">Contact</a>
+            <a class="button-solid" href="/apply/">Apply For Financing</a>
+          </div>
         </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2023 Joslen Commercial Funding</p>
+        <p>
+          Designed and Developed by
+          <a href="https://www.wildpinewebdesigns.com"
+            >Wild Pine Web Designs, LLC</a
+          >
+        </p>
+      </div>
     </section>
 
     <script>
-        var ba = ["MSIE","Trident","Edge"];
-        var b, ua = navigator.userAgent;
-        for(var i=0; i < ba.length; i++){
-            if( ua.indexOf(ba[i]) > -1 ){
-                b = ba[i];
-                break;
-            }
+      var ba = ["MSIE", "Trident", "Edge"];
+      var b,
+        ua = navigator.userAgent;
+      for (var i = 0; i < ba.length; i++) {
+        if (ua.indexOf(ba[i]) > -1) {
+          b = ba[i];
+          break;
         }
-        if(b == "MSIE" || b == "Trident" || b == "Edge"){
-            b = "Internet Explorer";
-            alert("You are using the " + b + " browser and this browser is incompatible with this website and many others.  Please open this page in a different browser, either Chrome or Firefox.  Thank you!");
-        }
+      }
+      if (b == "MSIE" || b == "Trident" || b == "Edge") {
+        b = "Internet Explorer";
+        alert(
+          "You are using the " +
+            b +
+            " browser and this browser is incompatible with this website and many others.  Please open this page in a different browser, either Chrome or Firefox.  Thank you!"
+        );
+      }
     </script>
 
     <script defer src="/app.js"></script>
-</body>
+  </body>
 </html>
